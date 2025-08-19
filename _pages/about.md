@@ -1,41 +1,29 @@
 ---
-layout: splash
+layout: single
 title: "Yuchen You"
 permalink: /
 ---
 
 > **Seeking MS/PhD (Fall 2026) in Distributed Systems, Operating Systems, and Networking.**
-{:.notice--primary}
 
-I build **dependable systems**. At **Order Lab (UMich)** I’m developing an **agent-based auto-mitigation loop** on ZooKeeper/HDFS — *reproduce → measure → decide → mitigate* — powered by Prometheus SLOs, HAProxy/Resilience4j, and Chaos faults.
+Hi! I’m Yuchen (CS @ UMich, ME @ SJTU). At UMich **Order Lab** I’m building an **agent-based auto-mitigation loop** for distributed systems—*reproduce → measure → decide → mitigate*—on ZooKeeper/HDFS with **Prometheus SLOs**, **HAProxy/Resilience4j**, and **Chaos** faults.
 
-**From embedded/robotics to systems.** Earlier I shipped STM32/C++/Rust control stacks with **interrupt-driven concurrency**, **deterministic scheduling**, and **reliable fieldbus** (CAN/I²C). The same discipline now drives my OS/DS work on **threads/VM/NFS**, **network fault emulation**, and **SLO-driven recovery**.
+**From embedded/robotics to systems.** Previously I shipped STM32/C++/Rust control stacks with **interrupt-driven concurrency**, **deterministic scheduling**, and **reliable fieldbus** (CAN/I²C). That discipline now powers my work on **threads/VM/NFS**, **network fault emulation**, and **SLO-driven recovery**.
 
-### Research Focus
-- **Distributed systems:** failure reproduction & **auto-mitigation**, SLO-driven observability  
-- **Operating systems:** **concurrency**, VM/paging, interface hardening  
-- **Networking:** dependable protocols, load shedding/failover, fault emulation
+## Research Focus
+- **Distributed systems:** failure reproduction & auto-mitigation; SLO-based observability  
+- **Operating systems:** concurrency; VM/paging; interface hardening  
+- **Networking:** dependable protocols; load shedding/failover; fault emulation
 
-[Projects](/projects/){: .btn } [Software](/software/){: .btn } [Posters & Awards](/posters/){: .btn } [CV](/cv/){: .btn .btn--primary } [GitHub](https://github.com/yourname){: .btn }
-{:.mt-3}
-
----
-
-## Featured Work
-{% include feature_row id="featured" %}
-
----
+## Featured
+- **Agentic DS Ops** (ZooKeeper/HDFS): automated loop → [project](/projects/agentic-ds-ops)  
+- **Teaching OS (EECS 482):** threads, COW+clock pager, Unix-style NFS → [projects](/projects/)  
+- **Soft Robotic Arm** (ICRA 2025 Workshop **Best Poster**) → [projects](/projects/)
 
 ## News
-- **2025-05** — *ICRA 2025 Workshop (Atlanta, GA)*: **Best Poster** (HDR Lab).  
-- **2025-05** — Joined **Order Lab (UMich CSE)**; started **Agentic DS Ops** (ZooKeeper/HDFS; Prometheus + HAProxy/Resilience4j).  
-- **2025-04** — Completed **EECS 482** teaching OS (threads, COW+clock pager, Unix-style NFS).  
-- **2025-04** — **EECS 489** networking labs: Mininet + DASH, TCP (GBN/SR) emulation, L3 router.
-{:.mb-4}
+- 2025-05 — ICRA 2025 Workshop (Atlanta, GA): **Best Poster**  
+- 2025-05 — Joined **Order Lab**; started **Agentic-DS-Ops**  
+- 2025-04 — Finished **EECS 482** teaching OS; **EECS 489** networking labs
 
----
-
-### Advisors & Labs
-- **Order Lab, CSE @ UMich** — Advisor: [Ryan (Peng) Huang](https://web.eecs.umich.edu/~ryanph/)  
-- **HDR Lab, Robotics @ UMich** — Advisor: [Xiaonan (Sean) Huang](https://robotics.umich.edu/people/faculty/xiaonan-sean-huang/)  
-- **Sirius Lab @ SJTU** — Advisor: [Yutong Ban](https://people.csail.mit.edu/yban/)
+## Quick links
+[CV](/cv/) · [Projects](/projects/) · [Blog](https://www.whoami-wesleyyou.top) · [GitHub](https://github.com/1WesleyYou) · [LinkedIn](https://www.linkedin.com/in/yuchen-you-1w/) · [Email](mailto:yuchenxr@umich.edu)
