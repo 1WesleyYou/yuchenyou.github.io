@@ -35,7 +35,7 @@ toc: false
 
 ---
 
-## Origami-Inspired Soft Robotic Arm *(HDR Lab, Sept 2024–Present)*
+## Origami-Inspired Soft Robotic Arm *(HDR Lab @ UMich, Sept 2024–Present, Advised by [Xiaonan Huang](https://soft.robotics.umich.edu/))*
 - Kresling origami + pneumatic actuation for confined-space manipulation.
 - Led STM32 & Orange Pi firmware (dynamics/PID, **CAN/I²C**); C++/Rust core algorithms; contributed to PCB design.
 - Demos/extended abstracts: **ICRA 2025 Workshop (Best Poster)**, RoboSoft 2025 Workshop, ICON 2025.  
@@ -43,6 +43,14 @@ toc: false
 
 ---
 
-## Auto Sentry Robot Control *(RoboMaster, 2023–2024)*
+## LLM-Guided Manipulation with Flexiv 7-DoF Arm *(Sirius Lab @ SJTU, Feb–Sept 2024, Advised by [Yutong Ban](https://people.csail.mit.edu/yban/))*
+- Built an **LLM-driven pipeline** that turns natural-language instructions into executable manipulation plans on a Flexiv **7-DoF** arm.
+- Implemented **FK/IK** and motion planning with **Flexiv RDK**; integrated **ZED** depth perception for scene understanding and grasp placement.
+- Designed a constraints-aware controller (joint/velocity/workspace limits) with smooth trajectories and **closed-loop** refinement from vision feedback.
+- Combined **simulation data** with real runs to improve task reliability (e.g., jigsaw puzzle assembly).
+  
+---
+
+## Auto Sentry Robot Control *(RoboMaster @ SJTU, 2023–2024)*
 - STM32-F407 platform; dual-gimbal stabilization; high-response 4-wheel chassis.
 - **CAN/UART** pipelines for CV/LiDAR; IMU-based absolute-pose control.
