@@ -92,5 +92,5 @@ Unit 5030, 1929 Plymouth Rd., Ann Arbor, MI 48105 · (+1) 734 510 0456 · <yuche
 ---
 
 ### Personal
-- **Languages:** English (TOEFL 103/120), Chinese (Mandarin)  
-- **Hobbies:** Rubik’s Cube, badminton, MOBA games  [oai_citation:12‡Resume.pdf](file-service://file-7wZ6iTULncYuZqe8VRoE2G)
+- **Languages:** English (TOEFL 106/120), Chinese (Mandarin)  
+- **Hobbies:** Rubik's Cube, badminton, MOBA games  [oai_citation:12‡Resume.pdf](file-service://file-7wZ6iTULncYuZqe8VRoE2G)
