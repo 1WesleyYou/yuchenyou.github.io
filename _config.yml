@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "air" # Currently available options are "default", "air"
-title                    : "Yuchen You / Site Title"
+title                    : "Yuchen You's Homepage"
 title_separator          : "-"
 name                     : &name "Yuchen You's Homepage"
 description              : &description "Senior Undergraduate Student at University of Michigan, Ann Arbor / Shanghai Jiao Tong University major in Computer Science"
@@ -27,9 +27,9 @@ author:
   pronouns         : "he/his" # example: "she/her"  
   bio              : "CS @ UMich + ME @ SJTU. Distributed Sys Robustness & Self Mitigation. PhD '26."
   location         : "Ann Arbor, Michigan, USA"
-  employer         : "University of Michigan, Ann Arbor / Shanghai Jiao Tong University"
+  employer         : "University of Michigan"
   uri              : # URL
-  email            : "yuchen.you@umich.edu"
+  email            : "yuchen_you@umich.edu"
 
   # Academic websites
   academia         : # URL
