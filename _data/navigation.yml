@@ -17,17 +17,17 @@ main:
   # - title: "Teaching"
   #   url: /teaching/    
     
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  # - title: "Blog Posts"
-  #   url: /year-archive/
+  # - title: "Portfolio"
+  #   url: /portfolio/
     
   - title: "CV"
     url: /cv/
 
   - title: "Projects"
     url: /projects/
+
+  - title: "Blog for Knowledge Base"
+    url: https://whoami-wesleyyou.top
     
   # - title: "CV"
   #   url: /cv-json/
