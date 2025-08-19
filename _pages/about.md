@@ -1,6 +1,7 @@
 ---
 layout: splash
 title: "Yuchen You"
+permalink: /
 ---
 
 > **Seeking MS/PhD (Fall 2026) in Distributed Systems, Operating Systems, and Networking.**
