@@ -6,6 +6,14 @@ author_profile: true
 toc: false
 ---
 
+## Agentic Distributed System Ops *(Order Lab @ UMich, May 2025–Present, Advised by [Ryan Huang](https://web.eecs.umich.edu/~ryanph/))*
+- Built an **agent-based auto-mitigation loop** (reproduce → measure → decide → mitigate) for common failures: overload, network latency/loss/partitions.
+- **Targets:** Apache **ZooKeeper/HDFS** (3-node dev clusters); faults via **ChaosBlade/Chaos Mesh** and `tc` network controls; synthetic workload generators.
+- **Mitigation:** **HAProxy** (TCP routing/failover) and **Resilience4j** (circuit breaker, bulkhead, rate limiter) with scripted rollback/timeout policies.
+- **Observability:** **Prometheus + JMX Exporter** tracking `avg_latency`, `outstanding_requests`, connections, session expirations, leader stability, and error rate; SLO-oriented dashboards.
+
+---
+
 ## Simulated Basic Operating System *(EECS 482, Jan–Apr 2025)*
 - **Threads:** user-level multicore threads (swapcontext/makecontext), Mesa monitors; interrupts/core-suspend; **non-preemptive FIFO** run queues.
 - **Pager/MMU:** SWAP & FILE-backed pages; page tables with present/reference/dirty bits; **COW + clock** eviction; supports `fork`/`mmap`.
