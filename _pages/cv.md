@@ -8,9 +8,9 @@ toc_sticky: true
 last_modified_at: 2025-08-19
 ---
 
-> **Actively seeking PhD positions (Fall 2026) in Operating Systems & Network Security.**
+> **Actively seeking PhD positions (Fall 2026) in Operating Systems & Distributed Systems & Networking.**
 
-[Download PDF](/files/Resume.pdf){: .btn .btn--primary }
+[Download PDF](/yuchenyou.github.io/files/Resume.pdf){: .btn .btn--primary }
 
 **Yuchen You**  
 Unit 5030, 1929 Plymouth Rd., Ann Arbor, MI 48105 · (+1) 734 510 0456 · <yuchenxr@umich.edu> <wesley_you@sjtu.edu.cn>
