@@ -1,18 +1,6 @@
 ---
 layout: splash
 title: "Yuchen You"
-permalink: /
-header:
-  overlay_color: "#000"
-  overlay_filter: 0.4
-  overlay_image: /assets/images/hero.jpg
-  actions:
-    - label: "View CV"
-      url: /cv/
-    - label: "Projects"
-      url: /projects/
-    - label: "Agentic DS Ops"
-      url: /projects/agentic-ds-ops
 ---
 
 > **Seeking MS/PhD (Fall 2026) in Distributed Systems, Operating Systems, and Networking.**
