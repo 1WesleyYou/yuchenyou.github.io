@@ -26,4 +26,4 @@ Hi! I’m Yuchen (CS @ UMich, ME @ SJTU). At UMich **Order Lab** I’m building 
 - 2025-04 — Finished **EECS 482** teaching OS; **EECS 489** networking labs
 
 ## Quick links
-[CV](/cv/) · [Projects](/projects/) · [Blog](https://www.whoami-wesleyyou.top) · [GitHub](https://github.com/1WesleyYou) · [LinkedIn](https://www.linkedin.com/in/yuchen-you-1w/) · [Email](mailto:yuchenxr@umich.edu)
+[CV](/yuchenyou.github.io/cv/) · [Projects](/yuchenyou.github.io/projects/) · [Blog](https://www.whoami-wesleyyou.top) · [GitHub](https://github.com/1WesleyYou) · [LinkedIn](https://www.linkedin.com/in/yuchen-you-1w/) · [Email](mailto:yuchenxr@umich.edu)
