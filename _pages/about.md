@@ -1,12 +1,12 @@
 ---
 layout: single
-title: "Yuchen You"
+title: "Yuchen You 游宇宸"
 permalink: /
 ---
 
 > **Seeking MS/PhD (Fall 2026) in Distributed Systems, Operating Systems, and Networking.**
 
-Hi! I’m Yuchen (CS @ UMich, ME @ SJTU). At UMich **Order Lab** I’m building an **agent-based auto-mitigation loop** for distributed systems—*reproduce → measure → decide → mitigate*—on ZooKeeper/HDFS with **Prometheus SLOs**, **HAProxy/Resilience4j**, and **Chaos** faults.
+Hi! I'm Yuchen (CS @ UMich, ME @ SJTU). At UMich **Order Lab** I'm building an **agent-based auto-mitigation loop** for distributed systems—*reproduce → measure → decide → mitigate*—on ZooKeeper/HDFS with **Prometheus SLOs**, **HAProxy/Resilience4j**, and **Chaos** faults.
 
 **From embedded/robotics to systems.** Previously I shipped STM32/C++/Rust control stacks with **interrupt-driven concurrency**, **deterministic scheduling**, and **reliable fieldbus** (CAN/I²C). That discipline now powers my work on **threads/VM/NFS**, **network fault emulation**, and **SLO-driven recovery**.
 
@@ -16,9 +16,9 @@ Hi! I’m Yuchen (CS @ UMich, ME @ SJTU). At UMich **Order Lab** I’m building 
 - **Networking:** dependable protocols; load shedding/failover; fault emulation
 
 ## Featured
-- **Agentic DS Ops** (ZooKeeper/HDFS): automated loop → [project](/projects/agentic-ds-ops)  
-- **OS (EECS 482):** threads, COW+clock pager, Unix-style NFS → [projects](/projects/)  
-- **Soft Robotic Arm** (ICRA 2025 Workshop **Best Poster**) → [projects](/projects/)
+- **Agentic DS Ops** (ZooKeeper/HDFS): automated loop → [project]()  
+- **OS (EECS 482):** threads, COW+clock pager, Unix-style NFS → [projects](https://whoami-wesleyyou.top/yuchenyou.github.io/projects/)  
+- **Soft Robotic Arm** (ICRA 2025 Workshop **Best Poster**) → [projects](https://whoami-wesleyyou.top/yuchenyou.github.io/projects/))
 
 ## News
 - 2025-05 — ICRA 2025 Workshop (Atlanta, GA): **Best Poster**  
