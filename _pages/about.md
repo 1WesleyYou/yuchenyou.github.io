@@ -17,7 +17,7 @@ Hi! I’m Yuchen (CS @ UMich, ME @ SJTU). At UMich **Order Lab** I’m building 
 
 ## Featured
 - **Agentic DS Ops** (ZooKeeper/HDFS): automated loop → [project](/projects/agentic-ds-ops)  
-- **Teaching OS (EECS 482):** threads, COW+clock pager, Unix-style NFS → [projects](/projects/)  
+- **OS (EECS 482):** threads, COW+clock pager, Unix-style NFS → [projects](/projects/)  
 - **Soft Robotic Arm** (ICRA 2025 Workshop **Best Poster**) → [projects](/projects/)
 
 ## News
