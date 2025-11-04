@@ -25,11 +25,11 @@ author:
   avatar           : "profile_photo.jpg"
   name             : "Yuchen You 游宇宸"
   pronouns         : "he/his" # example: "she/her"  
-  bio              : "CS @ UMich + ME @ SJTU. Distributed Sys Robustness & Self Mitigation. PhD '26."
+  bio              : "CS @ UMich + ME @ SJTU."
   location         : "Ann Arbor, Michigan, USA"
   employer         : "University of Michigan"
   uri              : # URL
-  email            : "yuchen_you@umich.edu"
+  email            : "yuchenxr@umich.edu"
 
   # Academic websites
   academia         : # URL

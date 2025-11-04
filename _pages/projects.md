@@ -54,7 +54,9 @@ toc: false
 
 ---
 
-## LLM-Guided Manipulation with Flexiv 7-DoF Arm *(Sirius Lab @ SJTU, Feb–Sept 2024, Advised by [Yutong Ban](https://people.csail.mit.edu/yban/))*
+## LLM-Guided Manipulation with Flexiv 7-DoF Arm 
+
+*(Sirius Lab @ SJTU, Feb–Sept 2024, Advised by [Yutong Ban](https://people.csail.mit.edu/yban/))*
 
 - Built an **LLM-driven pipeline** that turns natural-language instructions into executable manipulation plans on a Flexiv **7-DoF** arm.
 - Implemented **FK/IK** and motion planning with **Flexiv RDK**; integrated **ZED** depth perception for scene understanding and grasp placement.
