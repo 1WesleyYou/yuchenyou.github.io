@@ -26,12 +26,13 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 - **OS (EECS 482):** threads, COW+clock pager, Unix-style NFS $\rightarrow$ [projects](https://whoami-wesleyyou.top/yuchenyou.github.io/projects/)  
 - **Soft Robotic Arm** (ICRA 2025 Workshop **Best Poster**) $\rightarrow$ [projects](https://whoami-wesleyyou.top/yuchenyou.github.io/projects/))
 
-## News
+## News 
 
 - 2025-05 — ICRA 2025 Workshop (Atlanta, GA): **Best Poster**  
 - 2025-05 — Joined **Order Lab**; started **Agentic-DS-Ops**  
-- 2025-04 — Finished **EECS 482** teaching OS; **EECS 489** networking labs
+- 2025-05 — Origami Inspired Soft Robotic Arm accepted to ICRA 2025 Workshop
+- 2024-12 — Origami Inspired Soft Robotic Arm accepted to (IEEE) RoboSoft 2025 Workshop
 
 ## Quick links
 
-[CV](/yuchenyou.github.io/cv/) ` [Projects](/yuchenyou.github.io/projects/) ` [Blog](https://www.whoami-wesleyyou.top) ` [GitHub](https://github.com/1WesleyYou) ` [LinkedIn](https://www.linkedin.com/in/yuchen-you-1w/) ` [Email](mailto:yuchenxr@umich.edu)
+[CV](/yuchenyou.github.io/cv/) - [Projects](/yuchenyou.github.io/projects/) - [Blog](https://www.whoami-wesleyyou.top) - [GitHub](https://github.com/1WesleyYou) - [LinkedIn](https://www.linkedin.com/in/yuchen-you-1w/) - [Email](mailto:yuchenxr@umich.edu)
