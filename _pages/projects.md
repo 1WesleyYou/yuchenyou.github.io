@@ -15,12 +15,19 @@ Order Lab @ UMich, May 2025–Present, Advised by [Ryan Huang](https://web.eecs.
 - **Mitigation:** **HAProxy** (TCP routing/failover) and **Resilience4j** (circuit breaker, bulkhead, rate limiter) with scripted rollback/timeout policies.
 - **Observability:** **Prometheus + JMX Exporter** tracking `avg_latency`, `outstanding_requests`, connections, session expirations, leader stability, and error rate; SLO-oriented dashboards.
 
-## VLM for Auto AV
+## Cuda Proxy Player
+
+UMich CSE 582 Term Project (Advanced Operating Systems by [Prof. Ryan Huang](https://web.eecs.umich.edu/~ryanph)), Aug-Dec 2025
+
+- Designed a **hybrid CUDA runtime** combining **CUDA Graphs** for stable compute paths and **persistent kernels** for irregular on-device tasks.  
+- Reduced **kernel launch overhead** and **tail latency** without brittle fusion, enabling dynamic routing and static graph reuse.  
+- Implemented bucket-based static pooling, piecewise graph capture, and stream-level synchronization for efficient MoE execution.  
+
+## Cloud VLM for AV Control
 
 UMich CSE 589 Term Project (Advanced Networking by [Prof. Z. Morley Mao](https://web.eecs.umich.edu/~zmao/)), Aug-Dec 2025
 
 [fastEMMA](/images/fastEMMA.drawio.png)
-
 
 - Designed a **hybrid local–cloud pipeline** combining OpenEMMA and large VLMs for efficient & reliable decision-making.  
 - **Selective offloading** of static-scene context (e.g., construction, obstacles) to cloud models; dynamic agents handled locally.  
