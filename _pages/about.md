@@ -36,4 +36,4 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 
 ## 🔗 Quick links
 
-[CV](/yuchenyou.github.io/cv/) - [Projects](/yuchenyou.github.io/projects/) - [Blog](https://www.whoami-wesleyyou.top) - [GitHub](https://github.com/1WesleyYou) - [LinkedIn](https://www.linkedin.com/in/yuchen-you-1w/) - [Email](mailto:yuchenxr@umich.edu)
+[📄 CV](/yuchenyou.github.io/cv/) - [💻 Projects](/yuchenyou.github.io/projects/) - [✍️ Blog](https://www.whoami-wesleyyou.top) - [🧑‍💻GitHub](https://github.com/1WesleyYou) - [💼 LinkedIn](https://www.linkedin.com/in/yuchen-you-1w/) - [✉️ Email](mailto:yuchenxr@umich.edu)
