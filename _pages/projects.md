@@ -41,37 +41,45 @@ UMich CSE 589 Term Project (Advanced Networking by [Prof. Z. Morley Mao](https:/
 
 ## Simulated Basic Operating System
 
-UMich EECS 482, Jan–Apr 2025
+UMich EECS 482 (Introduction to Operating System with Special Topics), Jan–Apr 2025
 
-- **Threads:** user-level multicore threads (swapcontext/makecontext), Mesa monitors; interrupts/core-suspend; **non-preemptive FIFO** run queues.
-- **Pager/MMU:** SWAP & FILE-backed pages; page tables with present/reference/dirty bits; **COW + clock** eviction; supports `fork`/`mmap`.
-- **NFS:** inode-based, Unix-style NFS; concurrency with Boost shared/upgrade/unique locks; robust error handling.
-
----
-
-## Network Simulation with Mininet
-
-EECS 489, Jan–Apr 2025
-
-- Custom topologies with **iperf-style** RTT/throughput (C++ sockets); proxy via `select`/`poll` + round-robin; **DASH** adaptive streaming.
-- Transport emulation: TCP sliding window over UDP (**GBN/SR**, cumulative/selective ACKs); **L3 router** with ARP, ICMP, basic intra-domain routing.
+- **Threads:** user-level thread library (`swapcontext`/`makecontext`), Mesa monitors; interrupts/core-suspend; **non-preemptive FIFO** run queues. Thread library supports multiprocessor systems.
+- **Pager/MMU:** SWAP & FILE-backed pages; page tables with present/reference/dirty bits; **COW** lazy copying + **Clock** eviction; Supports `fork`/`mmap` for non-empty arena (process).
+- **Network File System:** inode-based, Unix-style NFS; Concurrency with Boost `shared`/`unique` locks and hand-to-hand locking mechanism; 
 
 ---
 
-## Digital Forensics
+## Networks
 
-EECS 388, Jan–Apr 2025
+EECS 489 (Introduction to Networks), Jan–Apr 2025
 
-- **Cryptanalysis & cracking:** length-extension, padding-oracle; John the Ripper (PDF/ODT), Hydra (SSH).
-- **Web exploitation:** data enumeration; auth bypass via **XSS/SQLi/CSRF**.
-- **Binary/RE:** BOF; **ROP/NOP-sled** vs DEP/ASLR; Ghidra decompilation & triage.
-- **Protocols/2FA:** TLS 1.3 handshake; Google-style **TOTP**.
+- **Mininet-style iperf**: Custom Mininet topologies(python) with iperf-style RTT/throughput measurement(C++ sockets);
+  - Reproduce the **buffer-bloat** problems with long switch queue and asymmetric link capacities. Solved with ovs SDN control with 2 prioritized queues. (This belongs to CSE 589 project)
+- **Video Server emulation**: **Reverse proxy** via `select`+`poll` + round-robin load balancing; **DASH** adaptive streaming.
+- **Transport Layer** emulation: TCP **sliding window** over UDP-style protocol (implemented **GBN/SR** rules, cumulative/selective ACKs); 
+- **L3 router** simulation with ARP, ICMP, basic intra-domain routing.
+
+---
+
+## Security
+
+EECS 388 (Introduction to Computer Security), Jan–Apr 2025
+
+- **Digital Forensics**: disk image analysis, file carving, metadata extraction with **Steganographic Tools**;
+- **Cryptanalysis & cracking:** length-extension, padding-oracle; John the Ripper (break encrypted PDF/ODT), Hydra (SSH).
+- **Web exploitation:** auth bypass via **XSS/SQLi/CSRF**, write a simple "Samy-is-My-Hero" Worm Attack.
+- **Binary Attack (stack overflow attack):** x86 assembly analysis and exploit development workflows using `gdb`; 
+  - focused on stack-overflow patterns, return-oriented techniques (ROP chains), and bypass mitigations like ASLR and Stack Canary.  
+- **Reverse Engineering:** recover executable → C source logic (decompilation & manual analysis) with **Ghidra** and static analysis; 
+  - combined with pwning to hack the UMich BBB Building's stair light
 
 ---
 
 ## Origami-Inspired Soft Robotic Arm
 
 [HDR Lab](https://soft.robotics.umich.edu/) @ UMich, Sept 2024–Present, Advised by [Xiaonan Huang](https://soft.robotics.umich.edu/)
+
+![origami-robotic-arm](/yuchenyou.github.io/images/modular_arm.png)
 
 - Kresling origami + pneumatic actuation for confined-space manipulation.
 - Led STM32 & Orange Pi firmware (dynamics/PID, **CAN/I²C**); C++/**Rust** core algorithms; contributed to PCB design.
@@ -85,7 +93,7 @@ EECS 388, Jan–Apr 2025
 
 - Built an **LLM-driven pipeline** that turns natural-language instructions as well as RGBD visual inputs into executable manipulation plans on a **Flexiv 7-DoF** manipulator.
 - Implemented **FK/IK** and motion planning with **Flexiv RDK**; integrated **ZED** depth perception for scene understanding and grasp placement.
-- Designed a constraints-aware controller (joint/velocity/workspace limits) with smooth trajectories and **closed-loop** refinement from vision feedback.
+- Designed a constraints-aware controller (joint/velocity/workspace limits) with smooth trajectories.
 - Combined **simulation data** with real runs to improve task reliability.
   
 ---
