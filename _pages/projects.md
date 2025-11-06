@@ -8,7 +8,9 @@ toc: false
 
 ## Agentic Distributed System Ops
 
-Order Lab @ UMich, May 2025–Present, Advised by [Ryan Huang](https://web.eecs.umich.edu/~ryanph/)
+[Order Lab](https://orderlab.io/) @ UMich, May 2025–Present, Advised by [Ryan Huang](https://web.eecs.umich.edu/~ryanph/)
+
+![agentic-ds-ops](/yuchenyou.github.io/images/agent_ds_ops.png)
 
 - Built an **agent-based auto-mitigation loop** (reproduce $\rightarrow$ measure $\rightarrow$ decide $\rightarrow$ mitigate) for common failures: overload, network latency/loss/partitions.
 - **Targets:** Apache **ZooKeeper/HDFS** (3-node dev clusters); faults via **ChaosBlade/Chaos Mesh** and `tc` network controls; synthetic workload generators.
@@ -79,7 +81,7 @@ EECS 388, Jan–Apr 2025
 
 ## LLM-Guided Manipulation with Flexiv 7-DoF Arm
 
-Sirius Lab @ SJTU, Feb–Sept 2024, Advised by [Yutong Ban](https://people.csail.mit.edu/yban/)
+[Sirius Lab](https://banyutong.github.io/sirius_lab_website/) @ SJTU, Feb–Sept 2024, Advised by [Yutong Ban](https://people.csail.mit.edu/yban/)
 
 - Built an **LLM-driven pipeline** that turns natural-language instructions into executable manipulation plans on a Flexiv **7-DoF** arm.
 - Implemented **FK/IK** and motion planning with **Flexiv RDK**; integrated **ZED** depth perception for scene understanding and grasp placement.
