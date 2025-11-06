@@ -17,9 +17,9 @@ Order Lab @ UMich, May 2025–Present, Advised by [Ryan Huang](https://web.eecs.
 
 ## VLM for Auto AV
 
-UMich CSE 589 Term Project (Advanced Networking by Prof. Z. Morley Mao), Aug-Dec 2025
+UMich CSE 589 Term Project (Advanced Networking by [Prof. Z. Morley Mao](https://web.eecs.umich.edu/~zmao/)), Aug-Dec 2025
 
-![images](fastEMMA.drawio.png)
+![images](/images/fastEMMA.drawio.png)
 
 - Designed a **hybrid local–cloud pipeline** combining OpenEMMA and large VLMs for efficient & reliable decision-making.  
 - **Selective offloading** of static-scene context (e.g., construction, obstacles) to cloud models; dynamic agents handled locally.  
