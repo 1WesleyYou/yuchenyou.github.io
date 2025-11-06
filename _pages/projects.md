@@ -19,6 +19,8 @@ Order Lab @ UMich, May 2025–Present, Advised by [Ryan Huang](https://web.eecs.
 
 UMich CSE 582 Term Project (Advanced Operating Systems by [Prof. Ryan Huang](https://web.eecs.umich.edu/~ryanph)), Aug-Dec 2025
 
+![cuda-proxy-player](/yuchenyou.github.io/images/cpp_workflow.png)
+
 - Designed a **hybrid CUDA runtime** combining **CUDA Graphs** for stable compute paths and **persistent kernels** for irregular on-device tasks.  
 - Reduced **kernel launch overhead** and **tail latency** without brittle fusion, enabling dynamic routing and static graph reuse.  
 - Implemented bucket-based static pooling, piecewise graph capture, and stream-level synchronization for efficient MoE execution.  
@@ -27,7 +29,7 @@ UMich CSE 582 Term Project (Advanced Operating Systems by [Prof. Ryan Huang](htt
 
 UMich CSE 589 Term Project (Advanced Networking by [Prof. Z. Morley Mao](https://web.eecs.umich.edu/~zmao/)), Aug-Dec 2025
 
-[fastEMMA](/yuchenyou.github.io/images/fastEMMA.drawio.png)
+![fastEMMA](/yuchenyou.github.io/images/fastEMMA.drawio.png)
 
 - Designed a **hybrid local–cloud pipeline** combining OpenEMMA and large VLMs for efficient & reliable decision-making.  
 - **Selective offloading** of static-scene context (e.g., construction, obstacles) to cloud models; dynamic agents handled locally.  
