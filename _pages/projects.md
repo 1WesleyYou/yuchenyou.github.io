@@ -83,14 +83,18 @@ EECS 388, Jan–Apr 2025
 
 [Sirius Lab](https://banyutong.github.io/sirius_lab_website/) @ SJTU, Feb–Sept 2024, Advised by [Yutong Ban](https://people.csail.mit.edu/yban/)
 
-- Built an **LLM-driven pipeline** that turns natural-language instructions into executable manipulation plans on a Flexiv **7-DoF** arm.
+- Built an **LLM-driven pipeline** that turns natural-language instructions as well as RGBD visual inputs into executable manipulation plans on a **Flexiv 7-DoF** manipulator.
 - Implemented **FK/IK** and motion planning with **Flexiv RDK**; integrated **ZED** depth perception for scene understanding and grasp placement.
 - Designed a constraints-aware controller (joint/velocity/workspace limits) with smooth trajectories and **closed-loop** refinement from vision feedback.
-- Combined **simulation data** with real runs to improve task reliability (e.g., jigsaw puzzle assembly).
+- Combined **simulation data** with real runs to improve task reliability.
   
 ---
 
-## Auto Sentry Robot Control *(RoboMaster @ SJTU, 2023–2024)*
+## Auto Sentry Robot Control
 
-- STM32-F407 platform; dual-gimbal stabilization; high-response 4-wheel chassis.
-- **CAN/UART** pipelines for CV/LiDAR; IMU-based absolute-pose control.
+RoboMaster @ SJTU, 2023–2024, Won National Championship in the 2023 RoboMaster Competition (Awarded by DJI)
+
+- STM32-F407 platform; dual-gimbal stabilization with optimized PID controller; high-response 4 steering wheel chassis.
+- **CAN/UART** pipelines for CV/LiDAR;
+- IMU-based absolute-pose control.
+- High precision shooting with flywheel speed & lead-angle compensation.
