@@ -14,8 +14,8 @@ toc: false
 
 - Built an **agent-based auto-mitigation loop** (reproduce $\rightarrow$ measure $\rightarrow$ decide $\rightarrow$ mitigate) for common failures: overload, network latency/loss/partitions.
 - **Targets:** Apache **ZooKeeper/HDFS** (3-node dev clusters); faults via **ChaosBlade/Chaos Mesh** and `tc` network controls; synthetic workload generators.
-- **Mitigation:** **HAProxy** (TCP routing/failover) and **Resilience4j** (circuit breaker, bulkhead, rate limiter) with scripted rollback/timeout policies.
-- **Observability:** **Prometheus + JMX Exporter** tracking `avg_latency`, `outstanding_requests`, connections, session expirations, leader stability, and error rate; SLO-oriented dashboards.
+- **Mitigation:** **HAProxy** (TCP routing/failover) and **Resilience4j** (circuit breaker, bulkhead, rate limiter) with self-implemented scripted rollback/timeout policies.
+- **Observability:** **Prometheus + JMX Exporter + ps/JVM Flags** tracking SLO metrics `p99_latency`, `outstanding_requests`, and System resources metrics `IFACE_throughput`, `cpu_usage`
 
 ## Cuda Proxy Player
 
