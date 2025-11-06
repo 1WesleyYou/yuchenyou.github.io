@@ -79,7 +79,7 @@ EECS 388 (Introduction to Computer Security), Jan–Apr 2025
 
 [HDR Lab](https://soft.robotics.umich.edu/) @ UMich, Sept 2024–Present, Advised by [Xiaonan Huang](https://soft.robotics.umich.edu/)
 
-![origami-robotic-arm](/yuchenyou.github.io/images/modular_arm.png)
+![origami-robotic-arm](/yuchenyou.github.io/images/modular_arm.jpg)
 
 - Kresling origami + pneumatic actuation for confined-space manipulation.
 - Led STM32 & Orange Pi firmware (dynamics/PID, **CAN/I²C**); C++/**Rust** core algorithms; contributed to PCB design.
@@ -101,6 +101,8 @@ EECS 388 (Introduction to Computer Security), Jan–Apr 2025
 ## Auto Sentry Robot Control
 
 RoboMaster @ SJTU, 2023–2024, Won National Championship in the 2023 RoboMaster Competition (Awarded by DJI)
+
+![sentry](/yuchenyou.github.io/images/sentry.jpg)
 
 - STM32-F407 platform; dual-gimbal stabilization with optimized PID controller; high-response 4 steering wheel chassis.
 - **CAN/UART** pipelines for CV/LiDAR;
