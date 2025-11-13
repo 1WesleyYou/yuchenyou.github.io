@@ -14,4 +14,14 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
+{% if page.terminal %}
+	<!-- jquery.terminal core CSS from CDN -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
+	<style>
+		/* Terminal container adaptive styling */
+		#terminal { min-height: 320px; box-shadow: 0 0 0 1px var(--global-border-color); border-radius: 6px; }
+		@media (max-width: 600px) { #terminal { font-size: 13px; } }
+	</style>
+{% endif %}
+
 <!-- end custom head snippets -->
