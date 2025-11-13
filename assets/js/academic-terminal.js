@@ -16,10 +16,19 @@
 
     // Command definitions
     var commands = {
+      ls: function () {
+        this.echo('Available commands:\n' + Object.keys(commands).sort().join('\n'));
+      },
       help: function () {
         this.echo('Available commands:\n' + Object.keys(commands).sort().join('\n'));
       },
       about: function () {
+        this.echo('Yuchen You 游宇宸, Undergraduate Student at University of Michigan, major in Computer Science.');
+      },
+      reboot: function () { 
+        this.echo('想干嘛? Ctrl+R 不会按?');
+      },
+      whoami: function () {
         this.echo('Yuchen You 游宇宸, Undergraduate Student at University of Michigan, major in Computer Science.');
       },
       projects: function () {
@@ -52,6 +61,8 @@
         this.echo([
           'Reading? NO',
           'Traveling',
+          'Badminton',
+          '对抗路',
           'Coding'
         ].join('\n'));
       },
