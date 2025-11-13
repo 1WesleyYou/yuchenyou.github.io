@@ -31,6 +31,12 @@
           '> Click the project links in the title bar to read more!',
         ].join('\n'));
       },
+      chinese: function () {
+        this.echo([
+          '中文还是太伟大了, 可惜小白小黑看不懂, 只能做成英文的了',
+          '建议下一个 Google Translate 插件, 这样我就不用用中文重新写一次了'
+        ].join('\n'));
+      },
       languages: function () {
         this.echo([
           'C/C++',
