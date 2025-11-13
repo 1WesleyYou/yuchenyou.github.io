@@ -62,7 +62,7 @@
           'Reading? NO',
           'Traveling',
           'Badminton',
-          '对抗路',
+          '对抗路, 但是不会马超',
           'Coding'
         ].join('\n'));
       },
@@ -108,9 +108,9 @@
         termInstance.error('Unknown command: ' + cmd + ' (type `help`)');
       }
     }, {
-      greetings: 'Welcome to my academic terminal.\nType `help` to list commands.',
+      greetings: 'Welcome to my page.\nType `help` to list commands.\n 你好, 欢迎光临~~',
       name: 'academic_terminal',
-      prompt: 'you> ',
+      prompt: 'visitor> ',
       history: true,
       onInit: function () {
         // Restore history
