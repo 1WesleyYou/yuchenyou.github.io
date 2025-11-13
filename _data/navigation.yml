@@ -28,7 +28,10 @@ main:
 
   - title: "Blog"
     url: https://www.whoami-wesleyyou.top
-    
+
+  - title: "Terminal"
+    url: /terminal/
+
   # - title: "CV"
   #   url: /cv-json/
     
