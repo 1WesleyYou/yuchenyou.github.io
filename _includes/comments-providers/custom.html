@@ -1,12 +1,41 @@
-<!-- start custom comments snippet -->
-<!-- Utterances comments (GitHub login) -->
-<section id="comments">
-  <script src="https://utteranc.es/client.js"
-          repo="yuchenyou/yuchenyou.github.io"
-          issue-term="pathname"
-          theme="github-light"
-          crossorigin="anonymous"
-          async>
-  </script>
-</section>
+<!-- start custom comments snippet: Utterances -->
+<div id="utterances_thread"></div>
+<script>
+  (function() {
+    var container = document.getElementById('utterances_thread');
+    if (!container) return;
+
+    function currentTheme() {
+      return (document.documentElement.getAttribute('data-theme') === 'dark') ? 'github-dark' : 'github-light';
+    }
+
+    function inject() {
+      container.innerHTML = '';
+      var s = document.createElement('script');
+      s.src = 'https://utteranc.es/client.js';
+      s.async = true;
+      s.setAttribute('repo', '{{ site.repository | escape }}');
+      s.setAttribute('issue-term', 'pathname');
+      s.setAttribute('label', '💬 comment');
+      s.setAttribute('theme', currentTheme());
+      s.crossOrigin = 'anonymous';
+      container.appendChild(s);
+    }
+
+    // initial mount
+    inject();
+
+    // react to theme changes
+    var obs = new MutationObserver(function(mutations) {
+      for (var i = 0; i < mutations.length; i++) {
+        if (mutations[i].attributeName === 'data-theme') {
+          var iframe = document.querySelector('iframe.utterances-frame');
+          if (!iframe) { inject(); return; }
+          iframe.contentWindow.postMessage({ type: 'set-theme', theme: currentTheme() }, 'https://utteranc.es');
+        }
+      }
+    });
+    obs.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  })();
+</script>
 <!-- end custom comments snippet -->
