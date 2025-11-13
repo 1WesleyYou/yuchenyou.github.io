@@ -1,40 +1,63 @@
 // Academic terminal initialization (only runs when #terminal exists)
 // Provides: command registry, dynamic help, history persistence, theme sync.
-(function() {
+(function () {
   if (typeof jQuery === 'undefined') {
     console.warn('[academic-terminal] jQuery missing; abort init');
     return;
   }
-  jQuery(function($) {
+  jQuery(function ($) {
     var $el = $('#terminal');
     if ($el.length === 0) return;
 
     // Persistent history key
     var STORAGE_KEY = 'academic_terminal_history_v1';
     var savedHistory = [];
-    try { savedHistory = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); } catch(e) {}
+    try { savedHistory = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); } catch (e) { }
 
     // Command definitions
     var commands = {
-      help: function() {
+      help: function () {
         this.echo('Available commands:\n' + Object.keys(commands).sort().join('\n'));
       },
-      about: function() {
-        this.echo('Yuchen You — Systems / Networking / Robotics.');
+      about: function () {
+        this.echo('Yuchen You 游宇宸, Undergraduate Student at University of Michigan, major in Computer Science.');
       },
-      projects: function() {
+      projects: function () {
         this.echo([
-          'agentic-ds-ops',
+          'Agentic Distributed Systems Ops (OrderLab)',
           'CUDA Graph Proxy Player',
           'LightEMMA Edge-Cloud VLM',
-          'Intersection Recognition & Tracking'
+          'Origami Inspired Soft Robotic Arm: a Platform for Modular Manipulation',
+          '> Click the project links in the title bar to read more!',
         ].join('\n'));
       },
-      contact: function() {
-        this.echo('Email: your_email@umich.edu');
+      languages: function () {
+        this.echo([
+          'C/C++',
+          'Rust',
+          'Golang',
+          'Python',
+          'Shellscript',
+          'Java',
+          'MATLAB',
+        ].join('\n'));
       },
-      clear: function() { this.clear(); },
-      theme: function(arg) {
+      hobbies: function () {
+        this.echo([
+          'Reading? NO',
+          'Traveling',
+          'Coding'
+        ].join('\n'));
+      },
+      contact: function () {
+        this.echo([
+          'UMich Email: yuchenxr@umich.edu',
+          'SJTU Email: wesley_you@sjtu.edu.cn',
+          `LinkedIn: https://www.linkedin.com/in/yuchen-you-a74940314/`
+        ].join('\n'));
+      },
+      clear: function () { this.clear(); },
+      theme: function (arg) {
         if (!arg) {
           this.echo('Current theme: ' + (jQuery('html').attr('data-theme') || 'light'));
           return;
@@ -52,11 +75,11 @@
         }
         this.echo('Switched theme to ' + arg);
         // Force footer recalculation
-        try { window.dispatchEvent(new Event('resize')); } catch(e) { $(window).trigger('resize'); }
+        try { window.dispatchEvent(new Event('resize')); } catch (e) { $(window).trigger('resize'); }
       }
     };
 
-    var term = $el.terminal(function(command, termInstance) {
+    var term = $el.terminal(function (command, termInstance) {
       command = command.trim();
       if (!command) return;
       var parts = command.split(/\s+/);
@@ -72,7 +95,7 @@
       name: 'academic_terminal',
       prompt: 'you> ',
       history: true,
-      onInit: function() {
+      onInit: function () {
         // Restore history
         if (savedHistory.length) {
           for (var i = 0; i < savedHistory.length; i++) {
@@ -80,12 +103,12 @@
           }
         }
       },
-      onCommand: function(cmd) {
+      onCommand: function (cmd) {
         // Persist history
         try {
           var hist = this.history().data();
           localStorage.setItem(STORAGE_KEY, JSON.stringify(hist));
-        } catch(e) {}
+        } catch (e) { }
       }
     });
 
@@ -93,6 +116,6 @@
     term.setCompletion(Object.keys(commands));
 
     // Recompute footer position
-    try { window.dispatchEvent(new Event('resize')); } catch(e) { $(window).trigger('resize'); }
+    try { window.dispatchEvent(new Event('resize')); } catch (e) { $(window).trigger('resize'); }
   });
 })();

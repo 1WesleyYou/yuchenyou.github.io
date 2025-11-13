@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Terminal"
+title: "YYCShell"
 permalink: /terminal/
 author_profile: true
 toc: false
