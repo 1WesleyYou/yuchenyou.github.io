@@ -3,6 +3,7 @@ layout: single
 title: "Yuchen You 游宇宸"
 permalink: /
 classes: wide
+comments: true
 ---
 
 > 🎓 **Seeking MS/PhD (Fall 2026) in Distributed Systems, Operating Systems, and Networking.**
