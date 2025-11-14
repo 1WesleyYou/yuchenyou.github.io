@@ -1,3 +1,39 @@
-<!-- start custom comments snippet: Utterances --> 
-
+<!-- start custom comments snippet: Utterances (official embed + theme sync) -->
+<script src="https://utteranc.es/client.js"
+				repo="{{ site.repository | escape }}"
+				issue-term="url"
+				label="💬 comment"
+				theme="github-light"
+				crossorigin="anonymous"
+				async>
+</script>
+<script>
+	(function(){
+		function currentTheme(){
+			return document.documentElement.getAttribute('data-theme') === 'dark' ? 'github-dark' : 'github-light';
+		}
+		function syncTheme(){
+			var iframe = document.querySelector('iframe.utterances-frame');
+			if (iframe && iframe.contentWindow) {
+				iframe.contentWindow.postMessage({ type: 'set-theme', theme: currentTheme() }, 'https://utteranc.es');
+			}
+		}
+		// try a few times until iframe is ready
+		var tries = 0;
+		(function retry(){
+			var f = document.querySelector('iframe.utterances-frame');
+			if (f && f.contentWindow) {
+				f.contentWindow.postMessage({ type: 'set-theme', theme: currentTheme() }, 'https://utteranc.es');
+			} else if (++tries < 6) {
+				setTimeout(retry, 800);
+			}
+		})();
+		// observe future theme changes
+		new MutationObserver(function(m){
+			for (var i=0;i<m.length;i++) {
+				if (m[i].attributeName === 'data-theme') { syncTheme(); }
+			}
+		}).observe(document.documentElement, { attributes:true, attributeFilter:['data-theme'] });
+	})();
+</script>
 <!-- end custom comments snippet -->
