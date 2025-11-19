@@ -31,8 +31,6 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	.home-featured .btn { padding: 0.3rem 0.6rem; font-size: 0.85rem; }
 	@media (min-width: 768px){
 		.home-featured .archive__item-teaser img { max-height: 180px; object-fit: cover; }
-		/* increase height cap for the Agentic item only */
-		.home-featured .feature--agentic .archive__item-teaser img { max-height: 300px; }
 	}
 	/* Optional: reduce vertical gap between items */
 	.home-featured .feature__item--left { margin-bottom: 1.25rem; }
@@ -49,7 +47,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 
 <div class="feature__wrapper">
 
-	<div class="feature__item--left feature--agentic">
+	<div class="feature__item--left">
 		<div class="archive__item">
 			<div class="archive__item-teaser">
 				<img src="{{ '/yuchenyou.github.io/images/agent_ds_ops.png' | relative_url }}" alt="Agentic DS Ops">
@@ -105,6 +103,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 				<div class="archive__item-excerpt">
 					Kresling origami + pneumatic actuation; firmware and control stack.
 				</div>
+                <span class="img-tag tag--award">ICRA 2025 Best Poster</span>
 				<p><a href="{{ '/yuchenyou.github.io/projects/#origami-inspired-soft-robotic-arm' | relative_url }}" class="btn">Learn more</a></p>
 			</div>
 		</div>
