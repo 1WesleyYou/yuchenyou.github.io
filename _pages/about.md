@@ -29,6 +29,8 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	.home-featured .archive__item-title { font-size: 1.15rem; margin-bottom: 0.25rem; }
 	.home-featured .archive__item-excerpt { font-size: 0.95rem; line-height: 1.55; }
 	.home-featured .btn { padding: 0.3rem 0.6rem; font-size: 0.85rem; }
+	/* Make the first (Agentic) image taller */
+	.home-featured .feature--agentic .archive__item-teaser img { max-height: 320px; }
 	@media (min-width: 768px){
 		.home-featured .archive__item-teaser img { max-height: 180px; object-fit: cover; }
 	}
@@ -47,7 +49,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 
 <div class="feature__wrapper">
 
-	<div class="feature__item--left">
+	<div class="feature__item--left feature--agentic">
 		<div class="archive__item">
 			<div class="archive__item-teaser">
 				<img src="{{ '/yuchenyou.github.io/images/agent_ds_ops.png' | relative_url }}" alt="Agentic DS Ops">
@@ -102,7 +104,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 				<img src="{{ '/yuchenyou.github.io/images/modular_arm.jpg' | relative_url }}" alt="Origami Soft Robotic Arm">
 			</div>
 			<div class="archive__item-body">
-				<h2 class="archive__item-title">[ICRA 2025 Best Poster] Origami-Inspired Soft Robotic Arm</h2>
+				<h2 class="archive__item-title">Origami-Inspired Soft Robotic Arm</h2>
 				<div class="archive__item-excerpt">
 					Kresling origami + pneumatic actuation. Led embedded stack: STM32 & Orange Pi firmware (PID/dynamics), CAN/I²C buses, real-time control loops; C++/Rust core and PCB contribution.
 				</div>
