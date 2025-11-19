@@ -24,6 +24,27 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 
 ## Featured
 
+<style>
+	/* Scoped only to the homepage Featured block */
+	.home-featured .archive__item-title { font-size: 1.15rem; margin-bottom: 0.25rem; }
+	.home-featured .archive__item-excerpt { font-size: 0.95rem; line-height: 1.55; }
+	.home-featured .btn { padding: 0.3rem 0.6rem; font-size: 0.85rem; }
+	@media (min-width: 768px){
+		.home-featured .archive__item-teaser img { max-height: 180px; object-fit: cover; }
+	}
+	/* Optional: reduce vertical gap between items */
+	.home-featured .feature__item--left { margin-bottom: 1.25rem; }
+	.home-featured .archive__item-excerpt p { margin: 0; }
+	.home-featured .archive__item { align-items: center; }
+	/* If your theme stacks too tight on mobile, you can tune here */
+	@media (max-width: 480px){
+		.home-featured .archive__item-title { font-size: 1.05rem; }
+		.home-featured .archive__item-excerpt { font-size: 0.92rem; }
+	}
+</style>
+
+<section class="home-featured">
+
 <div class="feature__wrapper">
 
 	<div class="feature__item--left">
@@ -44,10 +65,10 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	<div class="feature__item--left">
 		<div class="archive__item">
 			<div class="archive__item-teaser">
-				<img src="{{ '/images/500x300.png' | relative_url }}" alt="OS Projects">
+				<img src="{{ '/yuchenyou.github.io/images/cpp_workflow.png' | relative_url }}" alt="OS Projects">
 			</div>
 			<div class="archive__item-body">
-				<h2 class="archive__item-title">Operating System Projects (EECS 482)</h2>
+				<h2 class="archive__item-title">CUDA Proxy Player (EECS 582)</h2>
 				<div class="archive__item-excerpt">
 					Threads, COW + Clock pager, and Unix-style NFS with concurrency—course-scale OS components with solid correctness and performance.
 				</div>
@@ -72,6 +93,8 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	</div>
 
 </div>
+
+</section>
 
 ## 📰 News
 
