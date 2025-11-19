@@ -89,7 +89,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	<div class="feature__item--left feature--agentic">
 		<div class="archive__item">
 			<div class="archive__item-teaser">
-				<div class="tag-stack"><span class="tag tag--preprint">Preprint</span><span class="tag tag--cloud">SLO</span></div>
+				<div class="tag-stack"><span class="tag tag--preprint">Agentic</span><span class="tag tag--cloud">SLO</span></div>
 				<img src="{{ '/yuchenyou.github.io/images/agent_ds_ops.png' | relative_url }}" alt="Agentic DS Ops">
 			</div>
 			<div class="archive__item-body">
@@ -123,7 +123,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	<div class="feature__item--left">
 		<div class="archive__item">
 			<div class="archive__item-teaser">
-				<div class="tag-stack"><span class="tag tag--vlm">VLM</span><span class="tag tag--cloud">Network</span></div>
+				<div class="tag-stack"><span class="tag tag--vlm">CSE589</span><span class="tag tag--cloud">Network</span></div>
 				<img src="{{ '/yuchenyou.github.io/images/fastEMMA.drawio.png' | relative_url }}" alt="Cloud VLM for AV Control">
 			</div>
 			<div class="archive__item-body">
@@ -139,7 +139,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	<div class="feature__item--left">
 		<div class="archive__item">
 			<div class="archive__item-teaser">
-				<div class="tag-stack"><span class="tag tag--embedded">Embedded</span></div>
+				<div class="tag-stack"><span class="tag tag--embedded">ICRA 2025 Best Poster</span></div>
 				<img src="{{ '/yuchenyou.github.io/images/modular_arm.jpg' | relative_url }}" alt="Origami Soft Robotic Arm">
 			</div>
 			<div class="archive__item-body">
