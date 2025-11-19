@@ -37,7 +37,9 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	/* Optional: reduce vertical gap between items */
 	.home-featured .feature__item--left { margin-bottom: 1.25rem; }
 	.home-featured .archive__item-excerpt p { margin: 0; }
-	.home-featured .archive__item { align-items: center; }
+	/* Align image and text to top, and pad image a little bit */
+	.home-featured .archive__item { align-items: flex-start; }
+	.home-featured .archive__item-teaser { margin-top: 0.35rem; }
 	/* If your theme stacks too tight on mobile, you can tune here */
 	@media (max-width: 480px){
 		.home-featured .archive__item-title { font-size: 1.05rem; }
@@ -108,7 +110,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 				<div class="archive__item-excerpt">
 					Kresling origami + pneumatic actuation. Led embedded stack: STM32 & Orange Pi firmware (PID/dynamics), CAN/I²C buses, real-time control loops; C++/Rust core and PCB contribution.
 				</div>
-				<span class="img-tag tag--preprint">ICRA 2025 Best Poster</span>
+				<!-- <span class="img-tag tag--preprint">ICRA 2025 Best Poster</span> -->
 				<p><a href="{{ '/yuchenyou.github.io/projects/#origami-inspired-soft-robotic-arm' | relative_url }}" class="btn">Learn more</a></p>
 			</div>
 		</div>
