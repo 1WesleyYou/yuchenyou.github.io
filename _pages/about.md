@@ -52,10 +52,14 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	}
 	.home-featured .btn:active,
 	.home-featured .btn.btn--primary:active { transform: translateY(0); }
-	/* Make the first (Agentic) image taller */
-	.home-featured .feature--agentic .archive__item-teaser img { max-height: 320px; }
+	/* Enlarge images a bit (desktop) */
+	.home-featured .feature--agentic .archive__item-teaser img { max-height: 420px; }
 	@media (min-width: 768px){
-		.home-featured .archive__item-teaser img { max-height: 180px; object-fit: cover; }
+		.home-featured .archive__item-teaser img { max-height: 280px; object-fit: cover; }
+		/* widen image column slightly */
+		.home-featured .archive__item { gap: 1.25rem; }
+		.home-featured .archive__item-teaser { flex: 0 0 44%; }
+		.home-featured .archive__item-body { flex: 1; }
 	}
 	/* Optional: reduce vertical gap between items */
 	.home-featured .feature__item--left { margin-bottom: 1.25rem; }
@@ -63,18 +67,9 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	/* Align image and text to top, and pad image a little bit */
 	.home-featured .archive__item { align-items: flex-start; }
 	.home-featured .archive__item-teaser { margin-top: 0.35rem; }
-	/* Image + floating tag stack design */
+	/* Image container */
 	.home-featured .archive__item-teaser { position: relative; overflow: hidden; border-radius: 6px; }
 	.home-featured .archive__item-teaser img { display:block; width:100%; height:auto; }
-	.home-featured .tag-stack { position:absolute; top:8px; left:8px; display:flex; gap:6px; z-index:2; }
-	.home-featured .tag { padding:3px 8px; font-size:0.65rem; font-weight:600; line-height:1; color:#fff; background:#343a40; border-radius:6px; letter-spacing:.5px; box-shadow:0 2px 4px rgba(0,0,0,.25); backdrop-filter:blur(2px); }
-	.home-featured .tag--preprint { background:#1047b5; }
-	.home-featured .tag--runtime { background:#6f42c1; }
-	.home-featured .tag--vlm { background:#198754; }
-	.home-featured .tag--embedded { background:#c2185b; }
-	.home-featured .tag--cloud { background:#0d6efd; }
-	.home-featured .archive__item-teaser:hover .tag { box-shadow:0 3px 8px rgba(0,0,0,.35); }
-	@media (max-width:480px){ .home-featured .tag { font-size:0.58rem; padding:2px 6px; } }
 	/* If your theme stacks too tight on mobile, you can tune here */
 	@media (max-width: 480px){
 		.home-featured .archive__item-title { font-size: 1.05rem; }
@@ -89,7 +84,6 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	<div class="feature__item--left feature--agentic">
 		<div class="archive__item">
 			<div class="archive__item-teaser">
-				<div class="tag-stack"><span class="tag tag--preprint">Agentic</span><span class="tag tag--cloud">SLO</span></div>
 				<img src="{{ '/yuchenyou.github.io/images/agent_ds_ops.png' | relative_url }}" alt="Agentic DS Ops">
 			</div>
 			<div class="archive__item-body">
@@ -106,7 +100,6 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	<div class="feature__item--left">
 		<div class="archive__item">
 			<div class="archive__item-teaser">
-				<div class="tag-stack"><span class="tag tag--runtime">Runtime</span></div>
 				<img src="{{ '/yuchenyou.github.io/images/cpp_workflow.png' | relative_url }}" alt="OS Projects">
 			</div>
 			<div class="archive__item-body">
@@ -123,7 +116,6 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	<div class="feature__item--left">
 		<div class="archive__item">
 			<div class="archive__item-teaser">
-				<div class="tag-stack"><span class="tag tag--vlm">CSE589</span><span class="tag tag--cloud">Network</span></div>
 				<img src="{{ '/yuchenyou.github.io/images/fastEMMA.drawio.png' | relative_url }}" alt="Cloud VLM for AV Control">
 			</div>
 			<div class="archive__item-body">
@@ -139,7 +131,6 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	<div class="feature__item--left">
 		<div class="archive__item">
 			<div class="archive__item-teaser">
-				<div class="tag-stack"><span class="tag tag--embedded">ICRA 2025 Best Poster</span></div>
 				<img src="{{ '/yuchenyou.github.io/images/modular_arm.jpg' | relative_url }}" alt="Origami Soft Robotic Arm">
 			</div>
 			<div class="archive__item-body">
