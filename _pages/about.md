@@ -65,7 +65,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	.home-featured .archive__item-teaser { margin-top: 0.35rem; }
 	/* Image + floating tag stack design */
 	.home-featured .archive__item-teaser { position: relative; overflow: hidden; border-radius: 6px; }
-	.home-featured .archive__item-teaser img { display:block; width:100%; height:auto; }
+	.home-featured .archive__item-teaser img { display:block; width:150%; height:auto; }
 	.home-featured .tag-stack { position:absolute; top:8px; left:8px; display:flex; gap:6px; z-index:2; }
 	.home-featured .tag { padding:3px 8px; font-size:0.65rem; font-weight:600; line-height:1; color:#fff; background:#343a40; border-radius:6px; letter-spacing:.5px; box-shadow:0 2px 4px rgba(0,0,0,.25); backdrop-filter:blur(2px); }
 	.home-featured .tag--preprint { background:#1047b5; }
