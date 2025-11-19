@@ -4,28 +4,6 @@ title: "Yuchen You 游宇宸"
 permalink: /
 classes: wide
 comments: true
-feature_row:
-	- image_path: /yuchenyou.github.io/images/agent_ds_ops.png
-		alt: "Agentic DS Ops"
-		title: "Agentic Distributed System Ops"
-		excerpt: "Agent-based auto-mitigation loop for failures (reproduce → measure → decide → mitigate) on ZooKeeper/HDFS; chaos faults + SLO-driven observability."
-		url: "/yuchenyou.github.io/projects/#agentic-distributed-system-ops"
-		btn_label: "Learn more"
-		btn_class: "btn--primary"
-	- image_path: /images/500x300.png
-		alt: "OS Projects"
-		title: "Operating System Projects (EECS 482)"
-		excerpt: "Threads, COW + Clock pager, and Unix-style NFS with concurrency—course-scale OS components with solid correctness and performance."
-		url: "/yuchenyou.github.io/projects/#simulated-basic-operating-system"
-		btn_label: "Learn more"
-		btn_class: "btn"
-	- image_path: /yuchenyou.github.io/images/modular_arm.jpg
-		alt: "Origami Soft Robotic Arm"
-		title: "Origami-Inspired Soft Robotic Arm"
-		excerpt: "Kresling origami + pneumatic actuation; firmware and control stack; ICRA 2025 Workshop Best Poster."
-		url: "/yuchenyou.github.io/projects/#origami-inspired-soft-robotic-arm"
-		btn_label: "Learn more"
-		btn_class: "btn"
 ---
 
 > 🎓 **Seeking MS/PhD (Fall 2026) in Distributed Systems, Operating Systems, and Networking.**
