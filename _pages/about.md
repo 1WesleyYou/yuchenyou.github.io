@@ -82,7 +82,8 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 			<div class="archive__item-body">
 				<h2 class="archive__item-title">Agentic Distributed System Ops</h2>
 				<div class="archive__item-excerpt">
-					Agent-based auto-mitigation loop (reproduce → measure → decide → mitigate) on ZooKeeper/HDFS.
+					Agent-based auto-mitigation loop (reproduce → measure → decide → mitigate) on ZooKeeper.
+                    Automatic mitigation (both rule-based static and agentic) to the common failures in the distributed systems, such as overload, network fluctuations.
 				</div>
 				<p><a href="{{ '/yuchenyou.github.io/projects/#agentic-distributed-system-ops' | relative_url }}" class="btn btn--primary">Learn more</a></p>
 			</div>
