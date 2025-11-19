@@ -103,7 +103,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 				<div class="archive__item-excerpt">
 					Kresling origami + pneumatic actuation; firmware and control stack.
 				</div>
-                <span class="img-tag tag--award">ICRA 2025 Best Poster</span>
+				<span class="img-tag tag--preprint">ICRA 2025 Best Poster</span>
 				<p><a href="{{ '/yuchenyou.github.io/projects/#origami-inspired-soft-robotic-arm' | relative_url }}" class="btn">Learn more</a></p>
 			</div>
 		</div>
