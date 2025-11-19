@@ -72,7 +72,23 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 				<div class="archive__item-excerpt">
 					Threads, COW + Clock pager, and Unix-style NFS with concurrency—course-scale OS components with solid correctness and performance.
 				</div>
-				<p><a href="{{ '/yuchenyou.github.io/projects/#simulated-basic-operating-system' | relative_url }}" class="btn">Learn more</a></p>
+				<p><a href="{{ '/yuchenyou.github.io/projects/#cuda-proxy-player' | relative_url }}" class="btn">Learn more</a></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cloud VLM for AV Control (Networking/VLM project) -->
+	<div class="feature__item--left">
+		<div class="archive__item">
+			<div class="archive__item-teaser">
+				<img src="{{ '/yuchenyou.github.io/images/fastEMMA.drawio.png' | relative_url }}" alt="Cloud VLM for AV Control">
+			</div>
+			<div class="archive__item-body">
+				<h2 class="archive__item-title">Cloud VLM for AV Control</h2>
+				<div class="archive__item-excerpt">
+					Hybrid local–cloud pipeline with selective offloading to large VLMs and network-aware control for accuracy vs. responsiveness.
+				</div>
+				<p><a href="{{ '/yuchenyou.github.io/projects/#cloud-vlm-for-av-control' | relative_url }}" class="btn">Learn more</a></p>
 			</div>
 		</div>
 	</div>
@@ -83,9 +99,9 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 				<img src="{{ '/yuchenyou.github.io/images/modular_arm.jpg' | relative_url }}" alt="Origami Soft Robotic Arm">
 			</div>
 			<div class="archive__item-body">
-				<h2 class="archive__item-title">Origami-Inspired Soft Robotic Arm</h2>
+				<h2 class="archive__item-title">[ICRA 2025 Best Poster] Origami-Inspired Soft Robotic Arm</h2>
 				<div class="archive__item-excerpt">
-					Kresling origami + pneumatic actuation; firmware and control stack; ICRA 2025 Workshop Best Poster.
+					Kresling origami + pneumatic actuation; firmware and control stack.
 				</div>
 				<p><a href="{{ '/yuchenyou.github.io/projects/#origami-inspired-soft-robotic-arm' | relative_url }}" class="btn">Learn more</a></p>
 			</div>
