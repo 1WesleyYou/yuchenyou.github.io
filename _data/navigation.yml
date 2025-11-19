@@ -26,14 +26,14 @@ main:
   - title: "Projects"
     url: /projects/
 
-  - title: "Game"
-    url: https://focs.ji.sjtu.edu.cn/silverfocs/demo/2023/p2team08/
-
   - title: "Blog"
     url: https://www.whoami-wesleyyou.top
 
   - title: "Terminal"
     url: /terminal/
+
+  - title: "Game"
+    url: https://focs.ji.sjtu.edu.cn/silverfocs/demo/2023/p2team08/
 
   # - title: "CV"
   #   url: /cv-json/

@@ -28,7 +28,30 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	/* Scoped only to the homepage Featured block */
 	.home-featured .archive__item-title { font-size: 1.15rem; margin-bottom: 0.25rem; }
 	.home-featured .archive__item-excerpt { font-size: 0.95rem; line-height: 1.55; }
-	.home-featured .btn { padding: 0.3rem 0.6rem; font-size: 0.85rem; }
+	/* Button style: blue background, white text, rounded corners */
+	.home-featured .btn,
+	.home-featured .btn.btn--primary {
+		padding: 0.38rem 0.8rem;
+		font-size: 0.85rem;
+		line-height: 1.1;
+		background: #0d6efd;
+		color: #fff;
+		border-radius: 999px;
+		border: 1px solid transparent;
+		text-decoration: none;
+		display: inline-block;
+		box-shadow: 0 2px 6px rgba(13, 110, 253, 0.25);
+		transition: background .15s ease, box-shadow .15s ease, transform .08s ease;
+	}
+	.home-featured .btn:hover,
+	.home-featured .btn.btn--primary:hover {
+		background: #0b5ed7;
+		color: #fff;
+		box-shadow: 0 4px 10px rgba(13, 110, 253, 0.35);
+		transform: translateY(-1px);
+	}
+	.home-featured .btn:active,
+	.home-featured .btn.btn--primary:active { transform: translateY(0); }
 	/* Make the first (Agentic) image taller */
 	.home-featured .feature--agentic .archive__item-teaser img { max-height: 320px; }
 	@media (min-width: 768px){
@@ -60,8 +83,6 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 				<h2 class="archive__item-title">Agentic Distributed System Ops</h2>
 				<div class="archive__item-excerpt">
 					Agent-based auto-mitigation loop (reproduce → measure → decide → mitigate) on ZooKeeper/HDFS.
-					Inject faults with ChaosBlade/Chaos Mesh and <code>tc</code>; mitigate via HAProxy failover + Resilience4j (circuit breaker/bulkhead/rate limit).
-					SLO-driven observability: <code>p99_latency</code>, <code>outstanding_requests</code>; system metrics: interface throughput, CPU.
 				</div>
 				<p><a href="{{ '/yuchenyou.github.io/projects/#agentic-distributed-system-ops' | relative_url }}" class="btn btn--primary">Learn more</a></p>
 			</div>
@@ -74,10 +95,9 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 				<img src="{{ '/yuchenyou.github.io/images/cpp_workflow.png' | relative_url }}" alt="OS Projects">
 			</div>
 			<div class="archive__item-body">
-				<h2 class="archive__item-title">CUDA Proxy Player (EECS 582)</h2>
+				<h2 class="archive__item-title">CUDA Proxy Player</h2>
 				<div class="archive__item-excerpt">
-					Hybrid CUDA runtime combining CUDA Graphs (stable paths) with persistent kernels (irregular tasks) to cut launch overhead and tail latency.
-					Enables dynamic routing with static graph reuse; implements bucketed pooling, piecewise graph capture, and stream-level sync for efficient MoE execution.
+					Hybrid CUDA runtime: combine CUDA Graphs with persistent kernels to reduce launch overhead and tail latency, enabling dynamic routing with static graph reuse for efficient MoE execution.
 				</div>
 				<p><a href="{{ '/yuchenyou.github.io/projects/#cuda-proxy-player' | relative_url }}" class="btn">Learn more</a></p>
 			</div>
