@@ -55,7 +55,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	/* Make the first (Agentic) image taller */
 	.home-featured .feature--agentic .archive__item-teaser img { max-height: 320px; }
 	@media (min-width: 868px){
-		.home-featured .archive__item-teaser img { max-height: 180px; object-fit: cover; }
+		.home-featured .archive__item-teaser img { max-height: 250px; object-fit: cover; }
 	}
 	/* Optional: reduce vertical gap between items */
 	.home-featured .feature__item--left { margin-bottom: 1.25rem; }
