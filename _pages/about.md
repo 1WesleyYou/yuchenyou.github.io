@@ -55,7 +55,9 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 			<div class="archive__item-body">
 				<h2 class="archive__item-title">Agentic Distributed System Ops</h2>
 				<div class="archive__item-excerpt">
-					Agent-based auto-mitigation loop for failures (reproduce → measure → decide → mitigate) on ZooKeeper/HDFS; chaos faults + SLO-driven observability.
+					Agent-based auto-mitigation loop (reproduce → measure → decide → mitigate) on ZooKeeper/HDFS.
+					Inject faults with ChaosBlade/Chaos Mesh and <code>tc</code>; mitigate via HAProxy failover + Resilience4j (circuit breaker/bulkhead/rate limit).
+					SLO-driven observability: <code>p99_latency</code>, <code>outstanding_requests</code>; system metrics: interface throughput, CPU.
 				</div>
 				<p><a href="{{ '/yuchenyou.github.io/projects/#agentic-distributed-system-ops' | relative_url }}" class="btn btn--primary">Learn more</a></p>
 			</div>
@@ -70,7 +72,8 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 			<div class="archive__item-body">
 				<h2 class="archive__item-title">CUDA Proxy Player (EECS 582)</h2>
 				<div class="archive__item-excerpt">
-					Threads, COW + Clock pager, and Unix-style NFS with concurrency—course-scale OS components with solid correctness and performance.
+					Hybrid CUDA runtime combining CUDA Graphs (stable paths) with persistent kernels (irregular tasks) to cut launch overhead and tail latency.
+					Enables dynamic routing with static graph reuse; implements bucketed pooling, piecewise graph capture, and stream-level sync for efficient MoE execution.
 				</div>
 				<p><a href="{{ '/yuchenyou.github.io/projects/#cuda-proxy-player' | relative_url }}" class="btn">Learn more</a></p>
 			</div>
@@ -101,7 +104,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 			<div class="archive__item-body">
 				<h2 class="archive__item-title">[ICRA 2025 Best Poster] Origami-Inspired Soft Robotic Arm</h2>
 				<div class="archive__item-excerpt">
-					Kresling origami + pneumatic actuation; firmware and control stack.
+					Kresling origami + pneumatic actuation. Led embedded stack: STM32 & Orange Pi firmware (PID/dynamics), CAN/I²C buses, real-time control loops; C++/Rust core and PCB contribution.
 				</div>
 				<span class="img-tag tag--preprint">ICRA 2025 Best Poster</span>
 				<p><a href="{{ '/yuchenyou.github.io/projects/#origami-inspired-soft-robotic-arm' | relative_url }}" class="btn">Learn more</a></p>
