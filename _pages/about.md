@@ -54,7 +54,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	.home-featured .btn.btn--primary:active { transform: translateY(0); }
 	/* Make the first (Agentic) image taller */
 	.home-featured .feature--agentic .archive__item-teaser img { max-height: 320px; }
-	@media (min-width: 768px){
+	@media (min-width: 868px){
 		.home-featured .archive__item-teaser img { max-height: 180px; object-fit: cover; }
 	}
 	/* Optional: reduce vertical gap between items */
