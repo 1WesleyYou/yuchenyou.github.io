@@ -62,7 +62,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	.home-featured .archive__item-excerpt p { margin: 0; }
 	/* Align image and text to top, and pad image a little bit */
 	.home-featured .archive__item { align-items: flex-start; }
-	.home-featured .archive__item-teaser { margin-top: 0.35rem; }
+	.home-featured .archive__item-teaser { margin-top: 2.35rem; }
 	/* Image + floating tag stack design */
 	.home-featured .archive__item-teaser { position: relative; overflow: hidden; border-radius: 6px; }
 	.home-featured .archive__item-teaser img { display:block; width:150%; height:auto; }
