@@ -40,12 +40,6 @@
           '> Click the project links in the title bar to read more!',
         ].join('\n'));
       },
-      chinese: function () {
-        this.echo([
-          '中文还是太伟大了, 可惜小白小黑看不懂, 只能做成英文的了',
-          '建议下一个 Google Translate 插件, 这样我就不用用中文重新写一次了'
-        ].join('\n'));
-      },
       languages: function () {
         this.echo([
           'C/C++',
@@ -56,6 +50,9 @@
           'Java',
           'MATLAB',
         ].join('\n'));
+      },
+      fuck: function() {
+        this.echo('Please mind your language. 讲文明，树新风，请自觉背诵社会主义核心价值观');
       },
       hobbies: function () {
         this.echo([
