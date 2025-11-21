@@ -89,7 +89,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	<div class="feature__item--left feature--agentic">
 		<div class="archive__item">
 			<div class="archive__item-teaser">
-				<div class="tag-stack"><span class="tag tag--preprint">Agentic</span><span class="tag tag--cloud">SLO</span></div>
+				<div class="tag-stack"><span class="tag tag--preprint">Agentic</span><span class="tag tag--cloud">Distributed Sys</span></div>
 				<img src="{{ '/yuchenyou.github.io/images/agent_ds_ops.png' | relative_url }}" alt="Agentic DS Ops">
 			</div>
 			<div class="archive__item-body">
@@ -106,7 +106,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 	<div class="feature__item--left">
 		<div class="archive__item">
 			<div class="archive__item-teaser">
-				<div class="tag-stack"><span class="tag tag--runtime">Runtime</span></div>
+				<div class="tag-stack"><span class="tag tag--vlm">CSE582</span><span class="tag tag--runtime">CUDA</span></div>
 				<img src="{{ '/yuchenyou.github.io/images/cpp_workflow.png' | relative_url }}" alt="OS Projects">
 			</div>
 			<div class="archive__item-body">
