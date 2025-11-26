@@ -17,4 +17,4 @@ last_modified_at: 2025-08-19
 
 If not automatically redirected, please click:
 如果没有自动跳转，请点击：
-[View my Resume](https://www.whoami-wesleyyou.top/Resume.pdf)
+[View my Resume](https://www.whoami-wesleyyou.top/Yuchen_CV.pdf)
