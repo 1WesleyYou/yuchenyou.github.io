@@ -10,7 +10,7 @@ last_modified_at: 2025-08-19
 
 <script>
   (function() {
-    var dest = "https://www.whoami-wesleyyou.top/Resume.pdf" + location.search + location.hash;
+    var dest = "https://www.whoami-wesleyyou.top/Yuchen_CV.pdf" + location.search + location.hash;
     window.location.replace(dest);
   })();
 </script>
