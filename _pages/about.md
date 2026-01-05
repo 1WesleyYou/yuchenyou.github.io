@@ -131,7 +131,7 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 		<div class="archive__item">
 			<div class="archive__item-teaser">
 				<div class="tag-stack"><span class="tag tag--vlm">CSE589</span></div>
-				<img src="{{ '/yuchenyou.github.io/images/fastEMMA.drawio.png' | relative_url }}" alt="Cloud VLM for AV Control">
+				<img src="{{ '/yuchenyou.github.io/images/fastEMMA_workflow.png' | relative_url }}" alt="Cloud VLM for AV Control">
 			</div>
 			<div class="archive__item-body">
 				<h2 class="archive__item-title">Cloud VLM for AV Control</h2>
