@@ -6,13 +6,13 @@ classes: wide
 comments: true
 ---
 
-> 🎓 **Seeking MS/PhD (Fall 2026) in Distributed Systems, Operating Systems, and Networking.**
+> 🎓 **First-year CS PhD student at the University of Maryland, College Park, advised by [Prof. Zaoxing Liu](https://zaoxing.github.io/). Working on Distributed Systems, Operating Systems, and Networking.**
 
 👋 Hi, I'm Yuchen You
 
-I'm a senior undergraduate in **Computer Science** at the **University of Michigan**, also pursuing a dual degree in **Mechanical Engineering** at **Shanghai Jiao Tong University**.
+I'm a first-year PhD student in **Computer Science** at the **University of Maryland, College Park**, advised by [Prof. Zaoxing Liu](https://zaoxing.github.io/). In 2026, I received my B.S. in **Computer Science** from the **University of Michigan** and my dual-degree B.E. in **Mechanical Engineering** from **Shanghai Jiao Tong University**.
 
-My research interests lie broadly in **operating systems, distributed systems, and computer networking**, with a focus on building _efficient and reliable system_. I am doing some related projects in agentic distributed system, MoE inference acceleration, etc.
+My research interests lie broadly in **operating systems, distributed systems, and computer networking**, with a focus on building _efficient and reliable systems_. I am currently working on related projects in agentic distributed systems, MoE inference acceleration, etc.
 
 Before focusing on systems research, I worked extensively in robotics and embedded system, where I designed and implemented real-time control stacks for many kinds of robots and autonomous systems. That hands-on experience with concurrency, feedback loops, and fault-tolerant control has strongly shaped how I now think about building robust, adaptive computer systems.
 
@@ -24,6 +24,8 @@ Before focusing on systems research, I worked extensively in robotics and embedd
 
 ## 📰 News
 
+- 2026-08 — Started my **CS PhD** at the **University of Maryland, College Park**, advised by [Prof. Zaoxing Liu](https://zaoxing.github.io/)
+- 2026-05 — Graduated with a **B.S. in CS** (UMich) and a dual-degree **B.E. in ME** (SJTU)
 - 2025-05 — ICRA 2025 Workshop (Atlanta, GA): **Best Poster**
 - 2025-05 — Joined **Order Lab**; started **Agentic-DS-Ops**
 - 2025-05 — Origami Inspired Soft Robotic Arm accepted to ICRA 2025 Workshop

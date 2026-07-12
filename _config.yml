@@ -12,7 +12,7 @@ site_theme               : "air" # Currently available options are "default", "a
 title                    : "Yuchen You's Homepage"
 title_separator          : "-"
 name                     : &name "Yuchen You's Homepage"
-description              : &description "Senior Undergraduate Student at University of Michigan, Ann Arbor / Shanghai Jiao Tong University major in Computer Science"
+description              : &description "First-year CS PhD student at the University of Maryland, College Park. B.S. in CS from University of Michigan and dual-degree B.E. in ME from Shanghai Jiao Tong University (2026)."
 url                      : https://www.whoami-wesleyyou.top/yuchenyou.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "1Wesleyyou/yuchenyou.github.io"
@@ -25,9 +25,9 @@ author:
   avatar           : "profile_photo.jpg"
   name             : "Yuchen You 游宇宸"
   pronouns         : "he/his" # example: "she/her"  
-  bio              : "CS @ UMich + ME @ SJTU."
-  location         : "Ann Arbor, Michigan, USA"
-  employer         : "University of Michigan"
+  bio              : "CS PhD @ UMD. Prev: CS @ UMich + ME @ SJTU."
+  location         : "College Park, Maryland, USA"
+  employer         : "University of Maryland, College Park"
   uri              : # URL
   email            : "yuchenxr@umich.edu"
 
@@ -86,6 +86,8 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  workshops:
+    title: 'Workshops &amp; Posters'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
