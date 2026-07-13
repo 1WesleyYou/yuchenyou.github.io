@@ -7,9 +7,9 @@ comments: true
 ---
 
 Hi! I'm a first-year CS PhD student at the University of Maryland, College Park,
-advised by [Prof. Zaoxing Liu](https://zaoxing.github.io/). I work on machine
-learning systems (MLSys), distributed systems, and networking, with a focus on
-building efficient and reliable systems.
+advised by [Prof. Zaoxing Liu](https://zaoxing.github.io/). I am interested in
+distributed systems, agentic systems, networking, and machine learning systems
+(MLSys), with a focus on building efficient and reliable systems.
 
 Previously, I earned my B.S. in Computer Science from the University of Michigan
 and a dual-degree B.E. in Mechanical Engineering from Shanghai Jiao Tong
