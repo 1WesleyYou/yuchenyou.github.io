@@ -13,7 +13,7 @@ distributed systems, agentic systems, networking, and machine learning systems
 
 Previously, I earned my B.S. in Computer Science from the University of Michigan
 and a dual-degree B.E. in Mechanical Engineering from Shanghai Jiao Tong
-University (2026). At Michigan I worked with [Prof. Ryan Huang](https://web.eecs.umich.edu/~ryanph/)
+University. At Michigan I worked with [Prof. Ryan Huang](https://web.eecs.umich.edu/~ryanph/)
 on agentic distributed-system ops, and I earlier did robotics research with
 [Prof. Xiaonan Huang](https://soft.robotics.umich.edu/) (UMich) and
 [Prof. Yutong Ban](https://people.csail.mit.edu/yban/) (SJTU).
