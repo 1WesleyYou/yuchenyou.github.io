@@ -6,20 +6,18 @@ classes: wide
 comments: true
 ---
 
-> 🎓 **First-year CS PhD student at the University of Maryland, College Park, advised by [Prof. Zaoxing Liu](https://zaoxing.github.io/). Working on Distributed Systems, Operating Systems, and Networking.**
-
 👋 Hi, I'm Yuchen You
 
 I'm a first-year PhD student in **Computer Science** at the **University of Maryland, College Park**, advised by [Prof. Zaoxing Liu](https://zaoxing.github.io/). In 2026, I received my B.S. in **Computer Science** from the **University of Michigan** and my dual-degree B.E. in **Mechanical Engineering** from **Shanghai Jiao Tong University**.
 
-My research interests lie broadly in **operating systems, distributed systems, and computer networking**, with a focus on building _efficient and reliable systems_. At Michigan, I worked with [Prof. Ryan Huang](https://web.eecs.umich.edu/~ryanph/) on **agentic distributed-system ops** — an agent-driven loop that automatically reproduces and mitigates common failures in distributed systems. I am also interested in MoE inference acceleration and related systems problems.
+My research interests lie broadly in **machine learning systems (MLSys), distributed systems, and networking**, with a focus on building _efficient and reliable systems_. At Michigan, I worked with [Prof. Ryan Huang](https://web.eecs.umich.edu/~ryanph/) on **agentic distributed-system ops** — an agent-driven loop that automatically reproduces and mitigates common failures in distributed systems. I am also interested in MoE inference acceleration and related systems problems.
 
 Before focusing on systems research, I spent several years in **robotics and embedded systems**, building real-time control stacks for soft robots and autonomous platforms. I worked with [Prof. Xiaonan Huang](https://soft.robotics.umich.edu/) at Michigan on an origami-inspired soft robotic arm, and with [Prof. Yutong Ban](https://people.csail.mit.edu/yban/) at SJTU on LLM-guided robotic manipulation. That hands-on experience with concurrency, feedback loops, and fault-tolerant control strongly shaped how I now think about building robust, adaptive computer systems.
 
 ## Research Focus
 
+- **Machine learning systems (MLSys):** efficient inference/serving runtimes; MoE execution; systems for large models
 - **Distributed systems:** failure reproduction & auto-mitigation; SLO-based observability
-- **Operating systems:** concurrency; VM/paging; interface hardening
 - **Networking:** dependable protocols; load shedding/failover; fault emulation
 
 ## 📰 News
