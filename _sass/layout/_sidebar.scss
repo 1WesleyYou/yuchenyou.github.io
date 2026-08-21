@@ -139,6 +139,27 @@
   }
 }
 
+/* The sidebar column is narrower than the box the theme gives it, so long
+   bio lines (location, employer) used to run under the main content. Keep
+   them inside the column: wrap instead of overflowing, and leave a gap
+   before the article text. Only applies where those lines are shown. */
+.sidebar .author__urls {
+  @media screen and (min-width: 1024px) {
+    padding-right: 20px;
+
+    li {
+      display: flex;
+      align-items: baseline;
+      white-space: normal;      // overrides the nowrap used by the mobile dropdown
+      overflow-wrap: break-word;
+    }
+
+    .icon-pad-right {
+      flex: 0 0 auto;           // keep the icon from being squeezed by wrapped text
+    }
+  }
+}
+
 .author__pronouns {
   margin: 0;
 
