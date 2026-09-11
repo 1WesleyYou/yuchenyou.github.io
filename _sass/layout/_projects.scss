@@ -36,6 +36,12 @@ html[data-theme="dark"] {
   --proj-accent-competition: #ffa15a;
 }
 
+/* The theme reserves 2/12 of the row as right padding on every page.
+   Project cards want that room, so this page drops it to a small gutter. */
+@media (min-width: 57.8125em) {
+  .page.page--wide { padding-right: 2.5%; }
+}
+
 .proj {
   --proj-ease: cubic-bezier(0.16, 1, 0.3, 1);
   --proj-fast: 180ms;
