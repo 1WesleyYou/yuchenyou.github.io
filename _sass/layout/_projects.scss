@@ -192,12 +192,6 @@ html[data-theme="dark"] {
   will-change: transform;
 }
 
-@media (min-width: 48em) {
-  .proj-card--has-image {
-    grid-template-columns: minmax(0, 1fr) minmax(300px, 46%);
-    align-items: start;
-  }
-}
 
 /* accent stripe on the left */
 .proj-card::before {
@@ -376,9 +370,14 @@ html.js .proj-card.is-visible:focus-within {
 
 /* ---------- media ---------- */
 
+/* Diagram sits centered above the text, capped so very wide cards
+   don't blow it up past what the source resolution supports. */
 .proj-card__media {
+  order: -1;
   margin: 0;
-  align-self: start;
+  width: 100%;
+  max-width: 860px;
+  justify-self: center;
 }
 
 .proj-card__zoom {
@@ -529,5 +528,4 @@ html.js .proj-card.is-visible:focus-within {
 @media (max-width: 47.99em) {
   .proj-card { padding: 1.15rem 1.15rem 1.15rem 1.35rem; }
   .proj-card__head { flex-wrap: wrap; }
-  .proj-card__media { order: -1; }
 }
