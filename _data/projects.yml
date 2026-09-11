@@ -10,7 +10,7 @@ groups:
     blurb: Systems-heavy term projects and course builds at UMich.
   - id: competition
     label: Robotics & Competitions
-    blurb: Team robotics with real hardware and a scoreboard.
+    blurb: "Hands-on robotics: a championship sentry robot and an LLM-driven manipulator."
 
 projects:
   - title: Agentic Distributed System Overload Mitigation
@@ -48,20 +48,20 @@ projects:
       - "Led STM32 & Orange Pi firmware (dynamics/PID, **CAN/I²C**); C++/**Rust** core algorithms; contributed to PCB design."
       - "Demos/extended abstracts: **ICRA 2025 Workshop (Best Poster)**, RoboSoft 2025 Workshop, ICON 2025."
 
-  - title: LLM-Guided Manipulation with Flexiv 7-DoF Arm
-    group: research
-    org: Sirius Lab @ SJTU
-    org_url: https://banyutong.github.io/sirius_lab_website/
-    period: Feb – Sept 2024
-    advisor: Yutong Ban
-    advisor_url: https://people.csail.mit.edu/yban/
-    summary: Natural-language and RGBD input turned into executable manipulation plans on a 7-DoF arm.
-    tags: [LLM, Flexiv RDK, ZED, FK/IK, Motion Planning]
+  - title: Crawl Me Maybe? Search Engine
+    group: course
+    org: UMich EECS 498-005 · System Design of a Search Engine
+    period: Jan – Apr 2026
+    image: crawl_me_maybe.png
+    image_width: 713
+    image_height: 810
+    summary: A from-scratch web search engine in ~20k lines of C++20; I owned the index, the query executor and the ranker.
+    tags: [C++20, Inverted Index, mmap, Skip Lists, VByte, ISR, Ranking, GCP]
     bullets:
-      - "Built an **LLM-driven pipeline** that turns natural-language instructions and RGBD visual inputs into executable manipulation plans on a **Flexiv 7-DoF** manipulator."
-      - "Implemented **FK/IK** and motion planning with **Flexiv RDK**; integrated **ZED** depth perception for scene understanding and grasp placement."
-      - "Designed a constraints-aware controller (joint/velocity/workspace limits) with smooth trajectories."
-      - "Combined **simulation data** with real runs to improve task reliability."
+      - "Six-person team project: distributed crawler, segmented inverted index, tier-aware query executor and ranker, no third-party dependencies in the core data path; crawled **213M pages** and indexed **188.7M documents** (1 TB on disk) across 20 GCP nodes."
+      - "**Index module (owner):** designed the segment writer/reader, codec (VByte postings, skip lists) and `mmap`-backed manifest commit; made the builder parallel and appendable, cutting a full build from **11 min to 25 s**."
+      - "**Query execution:** implemented the cursor-mode ISR adapter and constraint solver (`Next`/`Seek`, AND/phrase iterators, dedup of doc + segment ids) and the query service wiring the compiler to the index reader."
+      - "**Ranking & ops:** added the dynamic ranker and static-score/snippet fields to the index, tuned final ranking on checked-in benchmarks, finalized the crawler and wrote its monitoring script."
 
   - title: Cuda Proxy Player
     group: course
@@ -145,3 +145,18 @@ projects:
       - "STM32-F407 platform; dual-gimbal stabilization with a tuned PID controller; high-response four-steering-wheel chassis."
       - "**CAN/UART** pipelines for CV and LiDAR; IMU-based absolute-pose control."
       - "High-precision shooting with flywheel speed and lead-angle compensation."
+
+  - title: LLM-Guided Manipulation with Flexiv 7-DoF Arm
+    group: competition
+    org: Sirius Lab @ SJTU
+    org_url: https://banyutong.github.io/sirius_lab_website/
+    period: Feb – Sept 2024
+    advisor: Yutong Ban
+    advisor_url: https://people.csail.mit.edu/yban/
+    summary: Natural-language and RGBD input turned into executable manipulation plans on a 7-DoF arm.
+    tags: [LLM, Flexiv RDK, ZED, FK/IK, Motion Planning]
+    bullets:
+      - "Built an **LLM-driven pipeline** that turns natural-language instructions and RGBD visual inputs into executable manipulation plans on a **Flexiv 7-DoF** manipulator."
+      - "Implemented **FK/IK** and motion planning with **Flexiv RDK**; integrated **ZED** depth perception for scene understanding and grasp placement."
+      - "Designed a constraints-aware controller (joint/velocity/workspace limits) with smooth trajectories."
+      - "Combined **simulation data** with real runs to improve task reliability."

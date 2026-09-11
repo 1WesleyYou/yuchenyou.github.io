@@ -370,14 +370,12 @@ html.js .proj-card.is-visible:focus-within {
 
 /* ---------- media ---------- */
 
-/* Diagram sits centered above the text, capped so very wide cards
-   don't blow it up past what the source resolution supports. */
+/* Diagram sits between the summary and the bullet list, centered and
+   capped so very wide cards don't blow it up past its source resolution. */
 .proj-card__media {
-  order: -1;
-  margin: 0;
+  margin: 0.25rem auto 1.1rem;
   width: 100%;
   max-width: 860px;
-  justify-self: center;
 }
 
 .proj-card__zoom {

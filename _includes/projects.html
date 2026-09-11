@@ -49,6 +49,15 @@
 
             {% if p.summary %}<p class="proj-card__summary">{{ p.summary }}</p>{% endif %}
 
+            {% if p.image %}
+            <figure class="proj-card__media">
+              <button type="button" class="proj-card__zoom" data-lightbox="{{ base_path }}/images/{{ p.image }}" data-caption="{{ p.title | escape }}" aria-label="Enlarge image for {{ p.title | escape }}">
+                <img src="{{ base_path }}/images/{{ p.image }}" alt="{{ p.title | escape }} diagram" loading="lazy"{% if p.image_width and p.image_height %} width="{{ p.image_width }}" height="{{ p.image_height }}"{% endif %}>
+                <span class="proj-card__zoom-hint" aria-hidden="true"><i class="fas fa-search-plus"></i></span>
+              </button>
+            </figure>
+            {% endif %}
+
             <ul class="proj-card__bullets">
               {% for b in p.bullets %}
                 <li>{{ b | markdownify | remove: "<p>" | remove: "</p>" }}</li>
@@ -62,14 +71,6 @@
             {% endif %}
           </div>
 
-          {% if p.image %}
-          <figure class="proj-card__media">
-            <button type="button" class="proj-card__zoom" data-lightbox="{{ base_path }}/images/{{ p.image }}" data-caption="{{ p.title | escape }}" aria-label="Enlarge image for {{ p.title | escape }}">
-              <img src="{{ base_path }}/images/{{ p.image }}" alt="{{ p.title | escape }} diagram" loading="lazy"{% if p.image_width and p.image_height %} width="{{ p.image_width }}" height="{{ p.image_height }}"{% endif %}>
-              <span class="proj-card__zoom-hint" aria-hidden="true"><i class="fas fa-search-plus"></i></span>
-            </button>
-          </figure>
-          {% endif %}
         </article>
         {% endfor %}
       </div>
