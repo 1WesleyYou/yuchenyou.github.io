@@ -13,23 +13,23 @@ groups:
     blurb: Team robotics with real hardware and a scoreboard.
 
 projects:
-  - title: Agentic Distributed System Ops
+  - title: Agentic Distributed System Overload Mitigation
     group: research
     org: Order Lab @ UMich
     org_url: https://orderlab.io/
-    period: May 2025 – Present
+    period: May 2024 – Present
     advisor: Ryan Huang
     advisor_url: https://web.eecs.umich.edu/~ryanph/
     image: agent_ds_ops.png
     image_width: 1536
     image_height: 1024
-    summary: An agent that reproduces, measures and mitigates failures in distributed systems on its own.
-    tags: [ZooKeeper, HAProxy, ChaosBlade, Prometheus]
+    summary: Closed-loop, policy-driven and LLM-augmented overload mitigation for ZooKeeper clusters.
+    tags: [ZooKeeper, Prometheus, HAProxy, tc, JVM, zkbench, MCP, GPT-4.1]
     bullets:
-      - "Built an **agent-based auto-mitigation loop** (reproduce → measure → decide → mitigate) for common failures: overload, network latency/loss/partitions."
-      - "**Targets:** Apache **ZooKeeper** (3-node dev clusters); faults via **ChaosBlade** and `tc` network controls; synthetic workload generators."
-      - "**Mitigation:** **HAProxy** (TCP routing/failover) with self-implemented scripted rollback/timeout policies."
-      - "**Observability:** **Prometheus + JMX Exporter + ps/JVM Flags** tracking SLO metrics `p99_latency`, `outstanding_requests`, and system resource metrics `IFACE_throughput`, `cpu_usage`."
+      - "**Closed-loop control plane:** engineered a closed-loop control plane for **ZooKeeper** clusters to mitigate overload failure, integrating **Prometheus** telemetry and **HAProxy** / `tc` for traffic shaping."
+      - "**Mitigation / RCA action library:** implemented a library of **atomic mitigation actions**, including network throttling (`tcconfig`), dynamic load balancing (**HAProxy Runtime API**), **JVM** heap tuning and disk I/O control (`fsync`), packaged as auditable scripts that any controller can invoke safely."
+      - "**Load injection & evaluator:** built a custom load generator (zkbench) supporting **multi-stage traffic** (warmup → spike → cooldown) to stress-test resilience, and a closed-loop evaluator that correlates injection rates, SLO violations and goodput across control strategies."
+      - "**Agentic controller:** prototyped a **Claude Code styled controller** (GPT-4.1 with **Model Context Protocol** tools) that consumes metrics and log summaries to do root cause analysis and select mitigation actions, enabling comparison between static policies and agentic reasoning on complex failure patterns; tuned context-window usage with a log processor to cut the number of cycles."
 
   - title: Origami-Inspired Soft Robotic Arm
     group: research
