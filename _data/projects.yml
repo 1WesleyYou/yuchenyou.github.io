@@ -21,8 +21,8 @@ projects:
     advisor: Ryan Huang
     advisor_url: https://web.eecs.umich.edu/~ryanph/
     image: agent_ds_ops.png
-    image_width: 580
-    image_height: 500
+    image_width: 1536
+    image_height: 1024
     summary: An agent that reproduces, measures and mitigates failures in distributed systems on its own.
     tags: [ZooKeeper, HAProxy, ChaosBlade, Prometheus]
     bullets:
