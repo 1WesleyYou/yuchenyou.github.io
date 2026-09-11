@@ -194,7 +194,7 @@ html[data-theme="dark"] {
 
 @media (min-width: 48em) {
   .proj-card--has-image {
-    grid-template-columns: minmax(0, 1fr) clamp(160px, 30%, 220px);
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 46%);
     align-items: start;
   }
 }
@@ -392,13 +392,13 @@ html.js .proj-card.is-visible:focus-within {
   overflow: hidden;
   cursor: zoom-in;
   position: relative;
-  aspect-ratio: 4 / 3;
 }
 
 .proj-card__zoom img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-height: 480px;
   object-fit: contain;
   margin: 0;
   border-radius: 0;
@@ -406,7 +406,7 @@ html.js .proj-card.is-visible:focus-within {
 }
 
 .proj-card:hover .proj-card__zoom img,
-.proj-card__zoom:focus-visible img { transform: scale(1.06); }
+.proj-card__zoom:focus-visible img { transform: scale(1.03); }
 
 .proj-card__zoom:focus-visible {
   outline: 2px solid var(--proj-accent, var(--global-link-color));

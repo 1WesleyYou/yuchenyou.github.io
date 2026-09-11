@@ -22,11 +22,11 @@ projects:
     advisor_url: https://web.eecs.umich.edu/~ryanph/
     image: agent_ds_ops.png
     summary: An agent that reproduces, measures and mitigates failures in distributed systems on its own.
-    tags: [ZooKeeper, HDFS, HAProxy, Resilience4j, Chaos Mesh, Prometheus]
+    tags: [ZooKeeper, HAProxy, ChaosBlade, Prometheus]
     bullets:
       - "Built an **agent-based auto-mitigation loop** (reproduce → measure → decide → mitigate) for common failures: overload, network latency/loss/partitions."
-      - "**Targets:** Apache **ZooKeeper/HDFS** (3-node dev clusters); faults via **ChaosBlade/Chaos Mesh** and `tc` network controls; synthetic workload generators."
-      - "**Mitigation:** **HAProxy** (TCP routing/failover) and **Resilience4j** (circuit breaker, bulkhead, rate limiter) with self-implemented scripted rollback/timeout policies."
+      - "**Targets:** Apache **ZooKeeper** (3-node dev clusters); faults via **ChaosBlade** and `tc` network controls; synthetic workload generators."
+      - "**Mitigation:** **HAProxy** (TCP routing/failover) with self-implemented scripted rollback/timeout policies."
       - "**Observability:** **Prometheus + JMX Exporter + ps/JVM Flags** tracking SLO metrics `p99_latency`, `outstanding_requests`, and system resource metrics `IFACE_throughput`, `cpu_usage`."
 
   - title: Origami-Inspired Soft Robotic Arm
