@@ -39,7 +39,7 @@
               {% if p.org_url %}<a href="{{ p.org_url }}" target="_blank" rel="noopener">{{ p.org }}</a>{% else %}{{ p.org }}{% endif %}
               {% if p.advisor %}
                 <span class="proj-card__sep" aria-hidden="true">·</span>
-                Advised by {% if p.advisor_url %}<a href="{{ p.advisor_url }}" target="_blank" rel="noopener">{{ p.advisor }}</a>{% else %}{{ p.advisor }}{% endif %}
+                {{ p.advisor_label | default: "Advised by" }} {% if p.advisor_url %}<a href="{{ p.advisor_url }}" target="_blank" rel="noopener">{{ p.advisor }}</a>{% else %}{{ p.advisor }}{% endif %}
               {% endif %}
             </p>
 
@@ -48,6 +48,15 @@
             {% endif %}
 
             {% if p.summary %}<p class="proj-card__summary">{{ p.summary }}</p>{% endif %}
+
+            {% if p.video_embed %}
+            <figure class="proj-card__video">
+              <div class="proj-card__video-frame">
+                <iframe src="{{ p.video_embed }}" title="{{ p.title | escape }} demo video" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe>
+              </div>
+              {% if p.video_url %}<figcaption><a href="{{ p.video_url }}" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i> Open the demo video</a></figcaption>{% endif %}
+            </figure>
+            {% endif %}
 
             {% if p.image %}
             <figure class="proj-card__media">

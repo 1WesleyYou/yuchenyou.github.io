@@ -2,9 +2,9 @@
 # Bullets are markdown strings. Images live in /images/.
 
 groups:
-  - id: research
-    label: Research
-    blurb: Lab work with advisors, ongoing or recently wrapped up.
+  - id: featured
+    label: Featured
+    blurb: Lab research and the largest system I have built, in that order.
   - id: course
     label: Course Projects
     blurb: Systems-heavy term projects and course builds at UMich.
@@ -14,7 +14,7 @@ groups:
 
 projects:
   - title: Agentic Distributed System Overload Mitigation
-    group: research
+    group: featured
     org: Order Lab @ UMich
     org_url: https://orderlab.io/
     period: May 2024 – Present
@@ -31,8 +31,28 @@ projects:
       - "**Load injection & evaluator:** built a custom load generator (zkbench) supporting **multi-stage traffic** (warmup → spike → cooldown) to stress-test resilience, and a closed-loop evaluator that correlates injection rates, SLO violations and goodput across control strategies."
       - "**Agentic controller:** prototyped a **Claude Code styled controller** (GPT-4.1 with **Model Context Protocol** tools) that consumes metrics and log summaries to do root cause analysis and select mitigation actions, enabling comparison between static policies and agentic reasoning on complex failure patterns; tuned context-window usage with a log processor to cut the number of cycles."
 
+  - title: Search Engine "Crawl Me Maybe" in C++
+    group: featured
+    org: UMich EECS 498 · System Design for Search Engine
+    period: Jan – Apr 2026
+    advisor: Nicole Hamilton
+    advisor_label: Instructor
+    advisor_url: https://nicolehamilton.com/
+    video_embed: https://drive.google.com/file/d/1NyLpX0U7HRUOjDJ0SezyaaAhicHxemop/preview
+    video_url: https://drive.google.com/file/d/1NyLpX0U7HRUOjDJ0SezyaaAhicHxemop/view?usp=sharing
+    image: crawl_me_maybe.png
+    image_width: 713
+    image_height: 810
+    summary: A complete web search engine built from scratch in C++ by a team of four, crawling 210M pages and serving queries from a 1 TB inverted index on 20 GCP servers.
+    tags: [C++20, Inverted Index, mmap, VByte, Skip Lists, Constraint Solver, BM25, GCP]
+    bullets:
+      - "**Product demo:** built a complete search engine in a team of 4; crawled **210M websites** within 2 days, indexed into a **1 TB inverted index**, average query time **200 ms** with p99 tail latency of 4 s, distributed across 20 GCP servers."
+      - "**Inverted index read-write storage system:** hierarchical storage design using `mmap` for disk I/O, **UTF-8 + VByte** encoding and a **string pool** for variable-length strings; implemented a **recursive skip-list** tree and **position-list cursor** for fast posting-list walks; high-concurrency multithreading and a **zero-copy data path** that made index writing compute-bound."
+      - "**Constraint solver design:** contributed a recursive constraint-solver tree built from the query compiler's AST, with submatching and merging; supports **AND / OR / Phrase / NOT** logic."
+      - "**Ranker design:** contributed a benchmark of ~100 hot query terms against Google/Bing and tuned the dynamic ranker weights, including BM25 tf-idf, domain-name matching and last-path matching."
+
   - title: Origami-Inspired Soft Robotic Arm
-    group: research
+    group: featured
     org: HDR Lab @ UMich
     org_url: https://soft.robotics.umich.edu/
     period: Sept 2024 – Present
@@ -47,21 +67,6 @@ projects:
       - "Kresling origami + pneumatic actuation for confined-space manipulation."
       - "Led STM32 & Orange Pi firmware (dynamics/PID, **CAN/I²C**); C++/**Rust** core algorithms; contributed to PCB design."
       - "Demos/extended abstracts: **ICRA 2025 Workshop (Best Poster)**, RoboSoft 2025 Workshop, ICON 2025."
-
-  - title: Crawl Me Maybe? Search Engine
-    group: course
-    org: UMich EECS 498-005 · System Design of a Search Engine
-    period: Jan – Apr 2026
-    image: crawl_me_maybe.png
-    image_width: 713
-    image_height: 810
-    summary: A from-scratch web search engine in ~20k lines of C++20; I owned the index, the query executor and the ranker.
-    tags: [C++20, Inverted Index, mmap, Skip Lists, VByte, ISR, Ranking, GCP]
-    bullets:
-      - "Six-person team project: distributed crawler, segmented inverted index, tier-aware query executor and ranker, no third-party dependencies in the core data path; crawled **213M pages** and indexed **188.7M documents** (1 TB on disk) across 20 GCP nodes."
-      - "**Index module (owner):** designed the segment writer/reader, codec (VByte postings, skip lists) and `mmap`-backed manifest commit; made the builder parallel and appendable, cutting a full build from **11 min to 25 s**."
-      - "**Query execution:** implemented the cursor-mode ISR adapter and constraint solver (`Next`/`Seek`, AND/phrase iterators, dedup of doc + segment ids) and the query service wiring the compiler to the index reader."
-      - "**Ranking & ops:** added the dynamic ranker and static-score/snippet fields to the index, tuned final ranking on checked-in benchmarks, finalized the crawler and wrote its monitoring script."
 
   - title: Cuda Proxy Player
     group: course

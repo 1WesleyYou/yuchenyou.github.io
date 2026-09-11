@@ -149,7 +149,7 @@ html[data-theme="dark"] {
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--proj-accent, currentColor) 18%, transparent);
 }
 
-.proj-group[data-group="research"]    { --proj-accent: var(--proj-accent-research); }
+.proj-group[data-group="featured"]    { --proj-accent: var(--proj-accent-research); }
 .proj-group[data-group="course"]      { --proj-accent: var(--proj-accent-course); }
 .proj-group[data-group="competition"] { --proj-accent: var(--proj-accent-competition); }
 
@@ -373,6 +373,7 @@ html.js .proj-card.is-visible:focus-within {
 /* Diagram sits between the summary and the bullet list, centered and
    capped so very wide cards don't blow it up past its source resolution. */
 .proj-card__media {
+  display: block;
   margin: 0.25rem auto 1.1rem;
   width: 100%;
   max-width: 860px;
@@ -432,6 +433,45 @@ html.js .proj-card.is-visible:focus-within {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ---------- embedded video ---------- */
+
+.proj-card__video {
+  display: block; /* the theme makes <figure> a flex row */
+  margin: 0.25rem auto 1.1rem;
+  width: 100%;
+  max-width: 860px;
+}
+
+.proj-card__video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--proj-border);
+  background: #000;
+}
+
+.proj-card__video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.page__content .proj-card__video figcaption {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0 0;
+  font-size: 0.82em;
+  text-align: center;
+  color: var(--proj-muted);
+}
+
+.proj-card__video figcaption a { color: inherit; }
+.proj-card__video figcaption a:hover { color: var(--proj-accent, var(--global-link-color-hover)); }
 
 /* ---------- lightbox ---------- */
 
