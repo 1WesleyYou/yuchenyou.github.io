@@ -21,6 +21,8 @@ projects:
     advisor: Ryan Huang
     advisor_url: https://web.eecs.umich.edu/~ryanph/
     image: agent_ds_ops.png
+    image_width: 580
+    image_height: 500
     summary: An agent that reproduces, measures and mitigates failures in distributed systems on its own.
     tags: [ZooKeeper, HAProxy, ChaosBlade, Prometheus]
     bullets:
@@ -37,6 +39,8 @@ projects:
     advisor: Xiaonan Huang
     advisor_url: https://soft.robotics.umich.edu/
     image: modular_arm.jpg
+    image_width: 1411
+    image_height: 780
     summary: A pneumatic Kresling-origami arm for confined-space manipulation, from firmware to PCB.
     tags: [STM32, Orange Pi, CAN, I²C, Rust, C++, PCB]
     bullets:
@@ -66,6 +70,8 @@ projects:
     advisor: Prof. Ryan Huang
     advisor_url: https://web.eecs.umich.edu/~ryanph
     image: cpp_workflow.png
+    image_width: 1142
+    image_height: 591
     summary: A hybrid CUDA runtime that mixes CUDA Graphs with persistent kernels to cut launch overhead for MoE.
     tags: [CUDA Graphs, Persistent Kernels, MoE, Streams]
     bullets:
@@ -80,6 +86,8 @@ projects:
     advisor: Prof. Z. Morley Mao
     advisor_url: https://web.eecs.umich.edu/~zmao/
     image: fastEMMA_workflow.png
+    image_width: 2600
+    image_height: 1984
     summary: A local-cloud VLM pipeline for autonomous driving that adapts offloading to network conditions.
     tags: [OpenEMMA, VLM, Offloading, Network-aware Control]
     bullets:
@@ -105,7 +113,7 @@ projects:
     summary: Mininet measurements, a DASH video proxy, a sliding-window transport and an L3 router.
     tags: [Mininet, iperf, DASH, Reverse Proxy, GBN/SR, ARP/ICMP]
     bullets:
-      - "**Mininet-style iperf:** custom Mininet topologies (Python) with iperf-style RTT/throughput measurement (C++ sockets); reproduced **buffer-bloat** with long switch queues and asymmetric links, then fixed it with OVS SDN control and two prioritized queues."
+      - "**Mininet-style iperf:** custom Mininet topologies (Python) with iperf-style RTT/throughput measurement (C++ sockets); reproduced **buffer-bloat** with long switch queues and asymmetric links, then fixed it with OVS SDN control and two prioritized queues (this part belongs to the CSE 589 project)."
       - "**Video server emulation:** **reverse proxy** via `select`+`poll` with round-robin load balancing; **DASH** adaptive streaming."
       - "**Transport layer emulation:** TCP **sliding window** over a UDP-style protocol (**GBN/SR**, cumulative/selective ACKs)."
       - "**L3 router** simulation with ARP, ICMP and basic intra-domain routing."
@@ -129,6 +137,8 @@ projects:
     period: 2023 – 2024
     award: National Champion, RoboMaster 2023 (DJI)
     image: sentry.jpg
+    image_width: 2362
+    image_height: 1297
     summary: Control stack for a championship-winning sentry robot, from gimbal PID to lead-angle shooting.
     tags: [STM32-F407, PID, CAN/UART, IMU, LiDAR]
     bullets:

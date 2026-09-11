@@ -26,7 +26,7 @@
 
       <div class="proj-list">
         {% for p in items %}
-        <article class="proj-card{% if p.image %} proj-card--has-image{% endif %}" data-group="{{ g.id }}" tabindex="0">
+        <article class="proj-card{% if p.image %} proj-card--has-image{% endif %}" data-group="{{ g.id }}">
           <div class="proj-card__body">
             <header class="proj-card__head">
               <span class="proj-card__badge">{{ g.label }}</span>
@@ -65,7 +65,7 @@
           {% if p.image %}
           <figure class="proj-card__media">
             <button type="button" class="proj-card__zoom" data-lightbox="{{ base_path }}/images/{{ p.image }}" data-caption="{{ p.title | escape }}" aria-label="Enlarge image for {{ p.title | escape }}">
-              <img src="{{ base_path }}/images/{{ p.image }}" alt="{{ p.title | escape }} diagram" loading="lazy">
+              <img src="{{ base_path }}/images/{{ p.image }}" alt="{{ p.title | escape }} diagram" loading="lazy"{% if p.image_width and p.image_height %} width="{{ p.image_width }}" height="{{ p.image_height }}"{% endif %}>
               <span class="proj-card__zoom-hint" aria-hidden="true"><i class="fas fa-search-plus"></i></span>
             </button>
           </figure>

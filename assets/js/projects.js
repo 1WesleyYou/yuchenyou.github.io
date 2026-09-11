@@ -104,7 +104,14 @@
 
     groups.forEach(function (group) {
       var show = filter === 'all' || group.getAttribute('data-group') === filter;
-      group.hidden = !show;
+      if (show) {
+        group.hidden = false;
+        return;
+      }
+      window.setTimeout(function () {
+        var stillHidden = group.querySelectorAll('.proj-card:not(.is-filtered-out)').length === 0;
+        if (stillHidden) group.hidden = true;
+      }, prefersReducedMotion ? 0 : HIDE_DELAY_MS);
     });
 
     if (emptyNote) emptyNote.hidden = visibleCount > 0;
