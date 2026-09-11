@@ -1,0 +1,87 @@
+{% include base_path %}
+{% assign groups = site.data.projects.groups %}
+{% assign projects = site.data.projects.projects %}
+
+<div class="proj" data-projects>
+  <nav class="proj-filter" aria-label="Filter projects">
+    <button type="button" class="proj-filter__btn is-active" data-filter="all" aria-pressed="true">
+      All <span class="proj-filter__count">{{ projects.size }}</span>
+    </button>
+    {% for g in groups %}
+      {% assign n = projects | where: "group", g.id | size %}
+      <button type="button" class="proj-filter__btn" data-filter="{{ g.id }}" aria-pressed="false">
+        {{ g.label }} <span class="proj-filter__count">{{ n }}</span>
+      </button>
+    {% endfor %}
+  </nav>
+
+  {% for g in groups %}
+    {% assign items = projects | where: "group", g.id %}
+    {% if items.size > 0 %}
+    <section class="proj-group" data-group="{{ g.id }}" aria-labelledby="proj-group-{{ g.id }}">
+      <header class="proj-group__head">
+        <h2 id="proj-group-{{ g.id }}" class="proj-group__title">{{ g.label }}</h2>
+        {% if g.blurb %}<p class="proj-group__blurb">{{ g.blurb }}</p>{% endif %}
+      </header>
+
+      <div class="proj-list">
+        {% for p in items %}
+        <article class="proj-card{% if p.image %} proj-card--has-image{% endif %}" data-group="{{ g.id }}" tabindex="0">
+          <div class="proj-card__body">
+            <header class="proj-card__head">
+              <span class="proj-card__badge">{{ g.label }}</span>
+              <span class="proj-card__period">{{ p.period }}</span>
+            </header>
+
+            <h3 class="proj-card__title">{{ p.title }}</h3>
+
+            <p class="proj-card__meta">
+              {% if p.org_url %}<a href="{{ p.org_url }}" target="_blank" rel="noopener">{{ p.org }}</a>{% else %}{{ p.org }}{% endif %}
+              {% if p.advisor %}
+                <span class="proj-card__sep" aria-hidden="true">·</span>
+                Advised by {% if p.advisor_url %}<a href="{{ p.advisor_url }}" target="_blank" rel="noopener">{{ p.advisor }}</a>{% else %}{{ p.advisor }}{% endif %}
+              {% endif %}
+            </p>
+
+            {% if p.award %}
+              <p class="proj-card__award"><i class="fas fa-trophy" aria-hidden="true"></i> {{ p.award }}</p>
+            {% endif %}
+
+            {% if p.summary %}<p class="proj-card__summary">{{ p.summary }}</p>{% endif %}
+
+            <ul class="proj-card__bullets">
+              {% for b in p.bullets %}
+                <li>{{ b | markdownify | remove: "<p>" | remove: "</p>" }}</li>
+              {% endfor %}
+            </ul>
+
+            {% if p.tags %}
+            <ul class="proj-card__tags" aria-label="Technologies">
+              {% for t in p.tags %}<li class="proj-tag">{{ t }}</li>{% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+
+          {% if p.image %}
+          <figure class="proj-card__media">
+            <button type="button" class="proj-card__zoom" data-lightbox="{{ base_path }}/images/{{ p.image }}" data-caption="{{ p.title | escape }}" aria-label="Enlarge image for {{ p.title | escape }}">
+              <img src="{{ base_path }}/images/{{ p.image }}" alt="{{ p.title | escape }} diagram" loading="lazy">
+              <span class="proj-card__zoom-hint" aria-hidden="true"><i class="fas fa-search-plus"></i></span>
+            </button>
+          </figure>
+          {% endif %}
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+  {% endfor %}
+
+  <p class="proj-empty" hidden>Nothing here yet.</p>
+</div>
+
+<dialog class="proj-lightbox" data-lightbox-dialog aria-label="Enlarged project image">
+  <button type="button" class="proj-lightbox__close" data-lightbox-close aria-label="Close">&times;</button>
+  <img class="proj-lightbox__img" src="" alt="">
+  <p class="proj-lightbox__caption"></p>
+</dialog>
