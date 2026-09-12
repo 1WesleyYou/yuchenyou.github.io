@@ -20,7 +20,8 @@
 }
 
 .home {
-  --home-rail: 7rem;
+  --home-rail: 5.5rem;
+  --home-logo: 3.25rem;
 }
 
 /* ---------- research interests ---------- */
@@ -83,6 +84,87 @@
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--card-accent-research) 18%, transparent);
 }
 
+/* ---------- education: logo rows ---------- */
+
+.page__content .home-schools {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.page__content .home-school {
+  display: grid;
+  grid-template-columns: var(--home-logo) minmax(0, 1fr);
+  gap: 0.2rem 1rem;
+  margin: 0;
+  padding: 0.8rem 0.9rem;
+  border-radius: 12px;
+  transition: background-color var(--card-fast) ease;
+}
+
+.home-school[data-accent="research"]    { --card-entry-accent: var(--card-accent-research); }
+.home-school[data-accent="course"]      { --card-entry-accent: var(--card-accent-course); }
+.home-school[data-accent="competition"] { --card-entry-accent: var(--card-accent-competition); }
+
+.home-school:hover {
+  background: color-mix(in srgb, var(--card-entry-accent, var(--card-muted)) 7%, transparent);
+}
+
+/* Every seal sits in an identical square tile, so the three line up no
+   matter how much padding each source image carries. */
+.home-school__logo {
+  grid-row: span 4;
+  display: grid;
+  place-items: center;
+  width: var(--home-logo);
+  height: var(--home-logo);
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid var(--card-border);
+  background: var(--card-surface);
+  box-shadow: var(--card-shadow);
+  transition: transform var(--card-fast) var(--card-ease),
+              box-shadow var(--card-fast) var(--card-ease);
+}
+
+.home-school__logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.home-school:hover .home-school__logo {
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.home-school__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Keep the year on the school's own line: a long school name wraps inside
+   its column rather than pushing the year down, so all three rows line up. */
+@media (min-width: 48em) {
+  .home-school__head { flex-wrap: nowrap; }
+  .page__content .home-school__head .home-entry__period { flex: 0 0 auto; }
+}
+
+.page__content .home-school__head .home-entry__period { margin: 0; }
+
+@media (max-width: 47.99em) {
+  .page__content .home-school { gap: 0.2rem 0.75rem; }
+  .home-school__head { gap: 0.2rem 0.75rem; }
+}
+
 /* ---------- timeline ---------- */
 
 .page__content .home-timeline {
@@ -93,7 +175,7 @@
 }
 
 /* the rail itself */
-.home-timeline::before {
+.home-timeline--news::before {
   content: "";
   position: absolute;
   top: 0.55rem;

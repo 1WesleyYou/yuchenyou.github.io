@@ -9,6 +9,7 @@ venue: 'ICRA 2025 Workshop, Atlanta, GA'
 venue_short: 'ICRA 2025 Workshop'
 award: 'Best Poster Award'
 authors: 'Jiyang Wang, **Yuchen You**, Xinqi Zhang, Haobo Fang, Jiaqi Wang, Xiaonan Huang'
+# link: https://...   # the ICRA workshop or IEEE Xplore page; set this and the card shows a "View publication" button
 ---
 
 Presented at the IEEE International Conference on Robotics and Automation (ICRA)

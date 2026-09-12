@@ -8,7 +8,7 @@
   </header>
 
   <h3 class="pub-card__title" itemprop="headline">
-    <a href="{{ base_path }}{{ p.url }}">{{ p.title }}</a>
+    {% if p.link %}<a href="{{ p.link }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
   </h3>
 
   {% if p.authors %}
@@ -25,11 +25,13 @@
   <div class="pub-card__excerpt" itemprop="description">{{ p.excerpt | markdownify }}</div>
   {% endif %}
 
+  {% if p.link or p.paperurl or p.slidesurl or p.posterurl or p.bibtexurl %}
   <p class="pub-card__actions">
-    <a class="pub-action" href="{{ base_path }}{{ p.url }}"><i class="fas fa-circle-info" aria-hidden="true"></i> Details</a>
+    {% if p.link %}<a class="pub-action" href="{{ p.link }}" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> {{ p.link_label | default: "View publication" }}</a>{% endif %}
     {% if p.paperurl %}<a class="pub-action" href="{{ p.paperurl }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a>{% endif %}
     {% if p.slidesurl %}<a class="pub-action" href="{{ p.slidesurl }}"><i class="fas fa-display" aria-hidden="true"></i> Slides</a>{% endif %}
     {% if p.posterurl %}<a class="pub-action" href="{{ p.posterurl }}"><i class="fas fa-image" aria-hidden="true"></i> Poster</a>{% endif %}
     {% if p.bibtexurl %}<a class="pub-action" href="{{ p.bibtexurl }}"><i class="fas fa-quote-right" aria-hidden="true"></i> BibTeX</a>{% endif %}
   </p>
+  {% endif %}
 </article>

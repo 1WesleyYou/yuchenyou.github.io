@@ -13,12 +13,19 @@
   <section class="home-block" aria-labelledby="home-education">
     <h2 id="home-education" class="home-block__title">Education</h2>
 
-    <ol class="home-timeline">
+    <ol class="home-schools">
       {% for e in home.education %}
-      <li class="home-entry" data-accent="{{ e.accent }}">
-        <p class="home-entry__period">{{ e.period }}</p>
+      <li class="home-school" data-accent="{{ e.accent }}">
+        {% if e.logo %}
+        <span class="home-school__logo">
+          <img src="{{ base_path }}/images/logos/{{ e.logo }}" alt="{{ e.school | escape }} seal" width="256" height="256" loading="lazy">
+        </span>
+        {% endif %}
         <div class="home-entry__body">
-          <h3 class="home-entry__title">{{ e.school }}</h3>
+          <div class="home-school__head">
+            <h3 class="home-entry__title">{{ e.school }}</h3>
+            <p class="home-entry__period">{{ e.period }}</p>
+          </div>
           <p class="home-entry__degree">{{ e.degree }}</p>
           {% if e.advisors %}
           <p class="home-entry__meta">

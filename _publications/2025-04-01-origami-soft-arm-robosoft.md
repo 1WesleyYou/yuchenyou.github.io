@@ -7,6 +7,7 @@ excerpt: 'Accepted to the IEEE RoboSoft 2025 Workshop. Same Kresling-origami pne
 date: 2025-04-01
 venue: 'IEEE RoboSoft 2025 Workshop'
 venue_short: 'RoboSoft 2025 Workshop'
+# link: https://...   # the RoboSoft workshop page, if there is one; set this and the card shows a "View publication" button
 ---
 
 Accepted (Dec 2024) to the IEEE International Conference on Soft Robotics

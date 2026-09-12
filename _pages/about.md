@@ -7,9 +7,9 @@ comments: true
 ---
 
 Hi! I'm a first-year CS PhD student at the University of Maryland, College Park,
-advised by [Prof. Zaoxing Liu](https://zaoxing.github.io/). I build efficient and
-reliable systems, with a focus on comprehensive observability and interpretable
-performance metrics.
+advised by [Prof. Zaoxing Liu](https://zaoxing.github.io/). I am interested in
+building efficient and reliable systems, with a focus on comprehensive
+observability and interpretable performance metrics.
 {: .home-lead}
 
 Most of my work is about making a system legible and then letting it fix itself:

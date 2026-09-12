@@ -9,6 +9,7 @@ venue: 'IEEE/RSJ IROS 2026, Pittsburgh, PA'
 venue_short: 'IROS 2026 LBR'
 award: 'Late Breaking Results Poster'
 authors: 'Mingxuan He, Jiyang Wang, **Yuchen You**, Jiaqi Wang, Xiaonan Huang'
+# link: https://...   # the IROS page, once it is up; set this and the card shows a "View publication" button
 ---
 
 Accepted (August 2026) as a **Late Breaking Results poster** at the 2026 IEEE/RSJ
