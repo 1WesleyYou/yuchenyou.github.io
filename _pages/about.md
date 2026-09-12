@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Yuchen You 游宇宸"
+title: "Yuchen You"
 permalink: /
 classes: wide
 comments: true
