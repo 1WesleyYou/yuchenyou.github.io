@@ -1,0 +1,42 @@
+/* ==========================================================================
+   CARD TOKENS
+   Shared surface, border, shadow, chip and accent values used by the card
+   layouts (/projects/, the home page). Defined once here so both stay in
+   step; page-specific rules live in their own partials.
+   ========================================================================== */
+
+:root {
+  --card-surface: #ffffff;
+  --card-surface-hover: #ffffff;
+  --card-border: rgba(34, 40, 49, 0.10);
+  --card-shadow: 0 1px 2px rgba(34, 40, 49, 0.06), 0 8px 24px -12px rgba(34, 40, 49, 0.18);
+  --card-shadow-hover: 0 2px 6px rgba(34, 40, 49, 0.08), 0 24px 48px -16px rgba(34, 40, 49, 0.28);
+  --card-muted: #5a6270;
+  --card-chip-bg: rgba(34, 40, 49, 0.06);
+  --card-chip-fg: #393e46;
+  --card-spot: rgba(0, 146, 202, 0.14);
+
+  --card-accent-research: #0092ca;
+  --card-accent-course: #1f9d7a;
+  --card-accent-competition: #e0742a;
+
+  --card-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --card-fast: 180ms;
+  --card-normal: 360ms;
+}
+
+html[data-theme="dark"] {
+  --card-surface: #2c3240;
+  --card-surface-hover: #313847;
+  --card-border: rgba(234, 234, 234, 0.08);
+  --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 8px 24px -12px rgba(0, 0, 0, 0.6);
+  --card-shadow-hover: 0 2px 6px rgba(0, 0, 0, 0.4), 0 24px 48px -16px rgba(0, 0, 0, 0.75);
+  --card-muted: #aab2c0;
+  --card-chip-bg: rgba(234, 234, 234, 0.08);
+  --card-chip-fg: #d5dae3;
+  --card-spot: rgba(0, 173, 181, 0.16);
+
+  --card-accent-research: #3fc1f0;
+  --card-accent-course: #3fd0a6;
+  --card-accent-competition: #ffa15a;
+}

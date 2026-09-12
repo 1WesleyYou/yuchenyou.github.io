@@ -3,51 +3,40 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
+publications_page: true
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-<style>
-  .pub-oven{border:1px solid #e3e3e3;border-left:4px solid #0d6efd;border-radius:8px;
-    padding:0.9rem 1.1rem;margin:0.5rem 0 1.6rem;background:#fafbff;}
-  .pub-oven h3{margin:0 0 0.35rem;font-size:1.05rem;}
-  .pub-oven p{margin:0;font-size:0.95rem;line-height:1.55;color:#444;}
-  .pub-oven .baking{color:#0d6efd;font-weight:600;}
-</style>
-
-<div class="pub-oven">
-  <h3>🍳 Operating-systems papers are in the oven.</h3>
-  <p>My first <strong>OS / distributed-systems</strong> papers are still
-  <span class="baking">baking</span> &mdash; currently in the
-  <a href="https://orderlab.io/">Order Lab</a> on failure reproduction and
-  auto-mitigation for distributed systems. Targeting submission soon; check back
-  for the first ding. Below is my peer-reviewed workshop &amp; poster work so far.</p>
-</div>
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+{% if site.author.googlescholar %}
+  <p class="pub-scholar">You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</p>
 {% endif %}
 
+<div class="pub-note">
+  <h2 class="pub-note__title">Operating-systems papers are in the oven</h2>
+  <p>My first <strong>OS / distributed-systems</strong> papers are still baking &mdash; currently in the
+  <a href="https://orderlab.io/">Order Lab</a>, on failure reproduction and auto-mitigation for
+  distributed systems. Targeting submission soon; check back for the first ding. Below is the
+  peer-reviewed workshop and poster work so far.</p>
+</div>
 
-
+<div class="pub">
+  {% if site.publication_category %}
+    {% for category in site.publication_category %}
+      {% assign items = site.publications | where: "category", category[0] | sort: "date" | reverse %}
+      {% if items.size > 0 %}
+      <section class="pub-group" data-category="{{ category[0] }}" aria-labelledby="pub-group-{{ category[0] }}">
+        <h2 id="pub-group-{{ category[0] }}" class="pub-group__title">{{ category[1].title }}</h2>
+        <div class="pub-list">
+          {% for post in items %}{% include publication-card.html post=post %}{% endfor %}
+        </div>
+      </section>
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    <div class="pub-list">
+      {% assign items = site.publications | sort: "date" | reverse %}
+      {% for post in items %}{% include publication-card.html post=post %}{% endfor %}
+    </div>
+  {% endif %}
+</div>

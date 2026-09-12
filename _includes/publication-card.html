@@ -1,0 +1,35 @@
+{% include base_path %}
+{% assign p = include.post %}
+
+<article class="pub-card" data-category="{{ p.category }}" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <header class="pub-card__head">
+    <span class="pub-card__venue">{{ p.venue_short | default: p.venue }}</span>
+    <span class="pub-card__year">{{ p.date | default: "1900-01-01" | date: "%Y" }}</span>
+  </header>
+
+  <h3 class="pub-card__title" itemprop="headline">
+    <a href="{{ base_path }}{{ p.url }}">{{ p.title }}</a>
+  </h3>
+
+  {% if p.authors %}
+  <p class="pub-card__authors">{{ p.authors | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+  {% endif %}
+
+  <p class="pub-card__meta">{{ p.venue }}</p>
+
+  {% if p.award %}
+  <p class="pub-card__award"><i class="fas fa-award" aria-hidden="true"></i> {{ p.award }}</p>
+  {% endif %}
+
+  {% if p.excerpt %}
+  <div class="pub-card__excerpt" itemprop="description">{{ p.excerpt | markdownify }}</div>
+  {% endif %}
+
+  <p class="pub-card__actions">
+    <a class="pub-action" href="{{ base_path }}{{ p.url }}"><i class="fas fa-circle-info" aria-hidden="true"></i> Details</a>
+    {% if p.paperurl %}<a class="pub-action" href="{{ p.paperurl }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a>{% endif %}
+    {% if p.slidesurl %}<a class="pub-action" href="{{ p.slidesurl }}"><i class="fas fa-display" aria-hidden="true"></i> Slides</a>{% endif %}
+    {% if p.posterurl %}<a class="pub-action" href="{{ p.posterurl }}"><i class="fas fa-image" aria-hidden="true"></i> Poster</a>{% endif %}
+    {% if p.bibtexurl %}<a class="pub-action" href="{{ p.bibtexurl }}"><i class="fas fa-quote-right" aria-hidden="true"></i> BibTeX</a>{% endif %}
+  </p>
+</article>

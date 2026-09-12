@@ -1,0 +1,273 @@
+/* ==========================================================================
+   HOME PAGE  (/)
+   A lighter counterpart to the project cards: the same tokens and motion,
+   but a timeline rail instead of full card chrome, so the two pages read as
+   one system without every block looking like a card.
+   Tokens come from include/_card-tokens.scss.
+   ========================================================================== */
+
+.page__content .home-lead {
+  max-width: 62ch;
+  font-size: 1.12em;
+  line-height: 1.62;
+  margin-bottom: 1.1rem;
+}
+
+.page__content .home-sub {
+  max-width: 62ch;
+  color: var(--card-muted);
+  margin-bottom: 1.5rem;
+}
+
+.home {
+  --home-rail: 7rem;
+}
+
+/* ---------- research interests ---------- */
+
+.page__content .home-interests {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 2.75rem;
+  padding: 0;
+}
+
+.page__content .home-interest {
+  margin: 0;
+  font-size: 0.82em;
+  font-weight: 600;
+  line-height: 1.3;
+  padding: 0.35em 0.8em;
+  border: 1px solid var(--card-border);
+  border-radius: 999px;
+  background: var(--card-surface);
+  color: var(--card-chip-fg);
+  box-shadow: var(--card-shadow);
+  transition: transform var(--card-fast) var(--card-ease),
+              box-shadow var(--card-fast) var(--card-ease),
+              color var(--card-fast) ease;
+}
+
+.home-interest:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow-hover);
+  color: var(--card-accent-research);
+}
+
+/* ---------- section headings ---------- */
+
+.home-block { margin: 0 0 2.75rem; }
+
+.page__content .home-block__title {
+  margin: 0 0 1.25rem;
+  padding: 0;
+  border: 0;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--card-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.home-block__title::before {
+  content: "";
+  width: 0.55em;
+  height: 0.55em;
+  border-radius: 50%;
+  background: var(--card-accent-research);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--card-accent-research) 18%, transparent);
+}
+
+/* ---------- timeline ---------- */
+
+.page__content .home-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* the rail itself */
+.home-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0.55rem;
+  bottom: 0.55rem;
+  left: 0;
+  width: 1px;
+  background: var(--card-border);
+}
+
+.page__content .home-entry {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.1rem 1.25rem;
+  margin: 0;
+  padding: 0.85rem 0.9rem 0.85rem 1.5rem;
+  border-radius: 10px;
+  transition: background-color var(--card-fast) ease;
+}
+
+@media (min-width: 48em) {
+  .page__content .home-entry {
+    grid-template-columns: var(--home-rail) minmax(0, 1fr);
+    align-items: baseline;
+  }
+}
+
+/* the dot on the rail */
+.home-entry::before {
+  content: "";
+  position: absolute;
+  left: -3.5px;
+  top: 1.35rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--card-surface);
+  border: 2px solid var(--card-entry-accent, var(--card-muted));
+  transition: transform var(--card-fast) var(--card-ease),
+              background-color var(--card-fast) ease;
+}
+
+.home-entry[data-accent="research"]    { --card-entry-accent: var(--card-accent-research); }
+.home-entry[data-accent="course"]      { --card-entry-accent: var(--card-accent-course); }
+.home-entry[data-accent="competition"] { --card-entry-accent: var(--card-accent-competition); }
+
+.home-entry:hover {
+  background: color-mix(in srgb, var(--card-entry-accent, var(--card-muted)) 7%, transparent);
+}
+
+.home-entry:hover::before {
+  transform: scale(1.35);
+  background: var(--card-entry-accent, var(--card-muted));
+}
+
+.page__content .home-entry__period {
+  margin: 0;
+  font-size: 0.78em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--card-muted);
+  font-variant-numeric: tabular-nums;
+  text-wrap: balance;
+}
+
+.home-entry__body { min-width: 0; }
+
+.page__content .home-entry__title {
+  margin: 0 0 0.1rem;
+  font-size: 1.05em;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.page__content .home-entry__degree {
+  margin: 0 0 0.2rem;
+  font-size: 0.95em;
+}
+
+.page__content .home-entry__meta,
+.page__content .home-entry__note {
+  margin: 0;
+  font-size: 0.85em;
+  color: var(--card-muted);
+}
+
+.home-entry__meta a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+  text-underline-offset: 0.15em;
+}
+
+.home-entry__meta a:hover { color: var(--card-entry-accent, var(--global-link-color-hover)); }
+
+.page__content .home-entry__text {
+  margin: 0;
+  font-size: 0.95em;
+  line-height: 1.55;
+}
+
+/* News dates sit a hair higher than the sentence they label */
+@media (min-width: 48em) {
+  .home-entry--news .home-entry__period { padding-top: 0.1em; }
+}
+
+/* ---------- quick links ---------- */
+
+.home-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0;
+}
+
+.home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em 1em;
+  border-radius: 999px;
+  border: 1px solid var(--card-border);
+  background: var(--card-surface);
+  box-shadow: var(--card-shadow);
+  font-size: 0.88em;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform var(--card-fast) var(--card-ease),
+              box-shadow var(--card-fast) var(--card-ease),
+              background-color var(--card-fast) ease,
+              color var(--card-fast) ease;
+}
+
+.page__content .home-link {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.home-link i { color: var(--card-accent-research); transition: color var(--card-fast) ease; }
+
+.home-link:hover,
+.home-link:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow-hover);
+  background: var(--global-text-color);
+  color: var(--global-bg-color);
+}
+
+.page__content .home-link:hover { color: var(--global-bg-color); }
+.home-link:hover i { color: inherit; }
+
+.home-link:focus-visible {
+  outline: 2px solid var(--card-accent-research);
+  outline-offset: 3px;
+}
+
+/* ---------- motion preferences ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .home-interest,
+  .home-entry,
+  .home-entry::before,
+  .home-link {
+    transition: none;
+  }
+
+  .home-interest:hover,
+  .home-link:hover,
+  .home-link:focus-visible { transform: none; }
+
+  .home-entry:hover::before { transform: none; }
+}
+
+@media (max-width: 47.99em) {
+  .page__content .home-entry { padding-left: 1.35rem; }
+  .page__content .home-entry__period { margin-bottom: 0.15rem; }
+}

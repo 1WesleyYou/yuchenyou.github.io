@@ -16,6 +16,7 @@
     "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
 
     "include/mixins",
+    "include/card-tokens",
     "vendor/susy/susy",
 
     "layout/reset",
@@ -36,6 +37,8 @@
     "layout/archive",
     "layout/sidebar",
     "layout/projects",
+    "layout/home",
+    "layout/publications",
 
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",

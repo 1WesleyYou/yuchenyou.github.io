@@ -6,6 +6,7 @@ permalink: /publication/2025-origami-soft-arm-robosoft
 excerpt: 'Accepted to the IEEE RoboSoft 2025 Workshop. Same Kresling-origami pneumatic soft-arm project; I built the embedded real-time control and firmware stack.'
 date: 2025-04-01
 venue: 'IEEE RoboSoft 2025 Workshop'
+venue_short: 'RoboSoft 2025 Workshop'
 ---
 
 Accepted (Dec 2024) to the IEEE International Conference on Soft Robotics

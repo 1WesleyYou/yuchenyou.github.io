@@ -7,21 +7,14 @@ comments: true
 ---
 
 Hi! I'm a first-year CS PhD student at the University of Maryland, College Park,
-advised by [Prof. Zaoxing Liu](https://zaoxing.github.io/). I am interested in
-distributed systems, agentic systems, networking, and machine learning systems
-(MLSys), with a focus on building efficient and reliable systems.
+advised by [Prof. Zaoxing Liu](https://zaoxing.github.io/). I build efficient and
+reliable systems, with a focus on comprehensive observability and interpretable
+performance metrics.
+{: .home-lead}
 
-Previously, I earned my B.S. in Computer Science from the University of Michigan
-and a dual-degree B.E. in Mechanical Engineering from Shanghai Jiao Tong
-University. At Michigan I worked with [Prof. Ryan Huang](https://web.eecs.umich.edu/~ryanph/)
-on agentic distributed-system ops, and I earlier did robotics research with
-[Prof. Xiaonan Huang](https://soft.robotics.umich.edu/) (UMich) and
-[Prof. Yutong Ban](https://people.csail.mit.edu/yban/) (SJTU).
+Most of my work is about making a system legible and then letting it fix itself:
+failure reproduction and auto-mitigation for distributed systems today, embedded
+real-time control for soft robots before that.
+{: .home-sub}
 
-See my [Projects]({{ '/yuchenyou.github.io/projects/' | relative_url }}) for ongoing and past work.
-
-## News
-
-- 2026-08 — Started my CS PhD at the University of Maryland, College Park
-- 2025-05 — ICRA 2025 Workshop (Atlanta, GA): Best Poster
-- 2025-05 — Joined the Order Lab; started Agentic-DS-Ops
+{% include home.html %}

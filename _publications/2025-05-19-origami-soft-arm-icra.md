@@ -5,7 +5,10 @@ category: workshops
 permalink: /publication/2025-origami-soft-arm-icra
 excerpt: 'Kresling-origami + pneumatic soft manipulator. I led the embedded real-time control stack: STM32 & Orange Pi firmware (PID & dynamics), CAN/I²C buses, and C++/Rust core, with PCB contribution.'
 date: 2025-05-19
-venue: 'ICRA 2025 Workshop, Atlanta, GA — Best Poster Award'
+venue: 'ICRA 2025 Workshop, Atlanta, GA'
+venue_short: 'ICRA 2025 Workshop'
+award: 'Best Poster Award'
+authors: 'Jiyang Wang, **Yuchen You**, Xinqi Zhang, Haobo Fang, Jiaqi Wang, Xiaonan Huang'
 ---
 
 Presented at the IEEE International Conference on Robotics and Automation (ICRA)
